@@ -5,14 +5,14 @@ import matplotlib.pyplot as plt
 
 dat = pd.read_csv("Combined_bar_charts.csv")
 
-#make the error bars
+#make the 95% confidence intervals
 dat['diff'] = dat['Upper'].sub(dat['Lower']) #get the length of the bars
 dat['diff2'] = dat['diff'].div(2) #length from line to point
 
 ##subset into the separate plots
 ex1 = dat[dat['Experiment'] == 1] #standard instructions
 ex2 = dat[dat['Experiment'] == 2] #response deadline
-ex3 = dat[dat['Experiment'] == 3]#Delayed JOL
+ex3 = dat[dat['Experiment'] == 3] #Delayed JOL
 ex4 = dat[dat['Experiment'] == 4] #Pooled
 
 ##set up the initial plot
