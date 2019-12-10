@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-dat = pd.read_csv("Combined_bar_charts.csv")
+dat = pd.read_csv("Combined_bar_charts PNOM 2019.csv")
 
 #make the 95% confidence intervals
 dat['diff'] = dat['Upper'].sub(dat['Lower']) #get the length of the bars
@@ -50,13 +50,13 @@ rects2 = ax1.bar(ind + width/2, r1_average, width, yerr = r1_conf, capsize = 3, 
                 label = 'Recall')
 
 #Make the plot spiffy
-ax1.set_title('Experiment 1: Standard Instructions', fontsize = 18)
-ax1.set_ylabel('Mean % JOL/Recall', fontsize = 16)
-ax1.set_xlabel('Direction', fontsize = 16)
+ax1.set_title('Experiment 1: Concurrent JOLs', fontsize = 20, fontweight = 'bold')
+ax1.set_ylabel('Mean % JOL/Recall', fontsize = 18, fontweight = 'bold')
+ax1.set_xlabel('Direction', fontsize = 18, fontweight = 'bold')
 ax1.xaxis.labelpad = 0
 ax1.set_xticks(ind)
-ax1.set_xticklabels(('B', 'F', 'S', 'U'), fontsize = 14)
-ax1.legend(fontsize = 14)
+ax1.set_xticklabels(('B', 'F', 'S', 'U'), fontsize = 16)
+ax1.legend(fontsize = 16)
 ax1.set_ylim([0,100])
 
 #Response Deadline
@@ -82,12 +82,12 @@ rects4 = ax2.bar(ind + width/2, r2_average, width, yerr = r2_conf, capsize = 3, 
                 label = 'Recall')
 
 #Make the plot spiffy
-ax2.set_title('Experiment 2: Response Deadline', fontsize = 18)
-ax2.set_ylabel('Mean % JOL/Recall', fontsize = 16)
-ax2.set_xlabel('Direction', fontsize = 16)
+ax2.set_title('Experiment 2: Response Deadline', fontsize = 20, fontweight = 'bold')
+ax2.set_ylabel('Mean % JOL/Recall', fontsize = 18, fontweight = 'bold')
+ax2.set_xlabel('Direction', fontsize = 18, fontweight = 'bold')
 ax2.set_xticks(ind)
-ax2.set_xticklabels(('B', 'F', 'S', 'U'), fontsize = 14)
-ax2.legend(fontsize = 14)
+ax2.set_xticklabels(('B', 'F', 'S', 'U'), fontsize = 16)
+ax2.legend(fontsize = 16)
 ax2.set_ylim([0,100])
 
 #Delayed JOL
@@ -113,12 +113,12 @@ rects6 = ax3.bar(ind + width/2, r3_average, width, yerr = r3_conf, capsize = 3, 
                 label = 'Recall')
 
 #Make the plot spiffy
-ax3.set_title('Experiment 3: Delayed JOL', fontsize = 18)
-ax3.set_ylabel('Mean % JOL/Recall', fontsize = 16)
-ax3.set_xlabel('Direction', fontsize = 16)
+ax3.set_title('Experiment 3: Immediate JOLs', fontsize = 20, fontweight = 'bold')
+ax3.set_ylabel('Mean % JOL/Recall', fontsize = 18, fontweight = 'bold')
+ax3.set_xlabel('Direction', fontsize = 18, fontweight = 'bold')
 ax3.set_xticks(ind)
-ax3.set_xticklabels(('B', 'F', 'S', 'U'), fontsize = 14)
-ax3.legend(fontsize = 14)
+ax3.set_xticklabels(('B', 'F', 'S', 'U'), fontsize = 16)
+ax3.legend(fontsize = 16)
 ax3.set_ylim([0,100])
 
 #Pooled
@@ -144,13 +144,13 @@ rects8 = ax4.bar(ind + width/2, r4_average, width, yerr = r4_conf, capsize = 3, 
                 label = 'Recall')
 
 #Make the plot spiffy
-ax4.set_title('Pooled Analyses', fontsize = 18)
-ax4.set_ylabel('Mean % JOL/Recall', fontsize = 16)
-ax4.set_xlabel('Direction', fontsize = 16)
+ax4.set_title('Experiment 4: Delayed JOLs', fontsize = 20, fontweight = 'bold')
+ax4.set_ylabel('Mean % JOL/Recall', fontsize = 18, fontweight = 'bold')
+ax4.set_xlabel('Direction', fontsize = 18, fontweight = 'bold')
 ax4.set_xticks(ind)
-ax4.set_xticklabels(('B', 'F', 'S', 'U'), fontsize = 14)
-ax4.legend(fontsize = 14)
+ax4.set_xticklabels(('B', 'F', 'S', 'U'), fontsize = 16)
+ax4.legend(fontsize = 16)
 ax4.set_ylim([0,100])
 
 ##save figure
-#fig.savefig('Combined_bar_chart2.png', dip = 10000)
+fig.savefig('Combined_bar_chart2.png', dip = 10000)
