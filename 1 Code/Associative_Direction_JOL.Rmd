@@ -20,7 +20,7 @@ authornote: |
   Nicholas P. Maxwell is a Ph.D. candidate at the University of Southern Mississippi. Mark J. Huff is an Assistant Professor of Psychology at The University of Southern Mississippi. Correspondence concerning this article should be addressed to Nicholas P. Maxwell, 118 College Dr, Hattiesburg, MS, 39406. E-mail: nicholas.maxwell@usm.edu
   
 abstract: |
-The accuracy of judgments of learning (JOLs) in forecasting later recall of cue-target pairs is sensitive to the associative direction. JOLs are generally well-calibrated for forward associative pairs (e.g., credit-card), but often overestimate later recall accuracy for backward pairs (e.g., card-credit). The present study further examines the effect of associative direction on JOL accuracy by comparing forward and backward pairs to symmetrical associates (e.g., salt-pepper), and unrelated pairs. The correspondence between initial JOLs and recall accuracy was examined when study was either self-paced (Experiment 1), when study and JOLs were made under a 5 s deadline (Experiment 2), or when JOLs were made after a delay (Experiment 3). Across experiments, JOLs accurately estimated correct recall for forward pairs, but overestimated recall for symmetrical, backward, and unrelated pairs-an overestimation that was particularly robust for backward pairs. Calibration plots depicting JOL ratings against their corresponding recall accuracy indicated overestimations occurred for all pair types, though overestimations only occurred at high JOL ratings for symmetrical and forward pairs, a qualitative difference that was not captured in standard analyses of mean JOL and recall rates.
+The accuracy of judgments of learning (JOLs) in forecasting later recall of cue-target pairs is sensitive to associative direction. JOLs are generally well-calibrated for forward associative pairs (e.g., credit-card), but recall accuracy is often overestimated for backward pairs (e.g., card-credit). The present study further examines the effect of associative direction on JOL accuracy by comparing forward and backward pairs to unrelated pairs and symmetrical associates (e.g., salt-pepper) — a novel comparison. The correspondence between initial JOLs and recall accuracy was examined when study was either self-paced with concurrent JOLs (Experiment 1), when study/JOL duration was equated across pair types (Experiment 2), when JOLs were made immediately following study (Experiment 3), and when JOLs were made after a delay (Experiment 4). Across experiments, JOLs accurately estimated correct recall for forward pairs, but overestimated recall for symmetrical, backward, and unrelated pairs—an overestimation that was particularly robust for backward pairs. Calibration plots depicting JOL ratings against their corresponding recall accuracy indicated overestimations occurred for all pair types, though overestimations only occurred at high JOL ratings for symmetrical and forward pairs, a qualitative difference that was not captured in standard analyses of mean JOL and recall rates.
   
   
 keywords          : "Judgments of Learning, Paired Associative Learning, Overestimations"
@@ -87,24 +87,29 @@ p.value = function(x){
   else { return(apa(x, 3, F))}
 }
 ```
-Metacognitive judgments are important for successful learning. At study, individuals must accurately monitor their own ability to learn new information so they can modify study strategies to maximize retention (Nelson & Narens, 1990). A common method for gauging metacognitive judgments is through the Judgment of Learning (JOL) paradigm, in which individuals estimate their likelihood of accurately retrieving a target word when prompted by a cue word on a later test (e.g., 100% = definitely would remember; 0% = definitely would not remember). While JOL ratings tend to be relatively accurate, certain factors have been shown to produce inconsistencies between predicted and actual performance. For instance, JOL accuracy has been shown to be sensitive towards perceptual information such as font size (Rhodes & Castel, 2008), the presence versus absence of retrieval practice (Miller & Geraci, 2014), and importantly, the associative direction of cue-target pairs (e.g., root-plant vs. plant-root) and their magnitude of association (Koriat & Bjork, 2005). Our study contributes to this area by further examining the relationship between JOLs and cued-recall accuracy by directly comparing four different types of word pairs (forward, backward, symmetrical, or unrelated). Further, we compare these pairs under self-paced study and JOL ratings, when study/JOLs are timed, and when JOLs are delayed as a means to improve JOL accuracy.
+Metacognitive judgments are important for successful learning. At study, individuals must accurately monitor their own ability to learn new information to modify study strategies and maximize retention (Nelson & Narens, 1990). One method for gauging metacognitive judgments is the Judgment of Learning (JOL) paradigm, in which individuals estimate their likelihood of accurately retrieving a target word when given a cue word on a later test (e.g., 100% = definitely remember; 0% = definitely not remember). While JOL ratings can be accurate, certain factors have been shown to produce inconsistencies between predicted and actual performance. For instance, JOL accuracy has shown sensitivity towards perceptual information such as font size (Rhodes & Castel, 2008), the presence versus absence of retrieval practice (Miller & Geraci, 2014), and importantly, the associative direction and magnitude of cue-target pairs (e.g., root-plant vs. plant-root; Koriat & Bjork, 2005). Our study contributes to this area by further examining the relationship between JOLs and cued-recall accuracy by directly comparing four different types of word pairs (forward, backward, symmetrical, or unrelated). Further, we compare these pairs under self-paced study and JOL ratings, when study/JOLs are timed, and when JOLs are delayed following study so as to improve JOL accuracy.
 
-Interest in the correspondence between memory predictions at study and later recall accuracy for word pairs is not new. In an early demonstration, Arbuckle and Cuddy (1969) reported a relationship between word-pair association and recall performance in which participants generally perceived strong (vs. weak) associates as being more easily remembered. More recently, Koriat and Bjork (2005) showed that the direction of association in cue-target pairs can similarly affect the correspondence between memory predictions using JOLs and later recall performance. In particular, two directions of associations were suggested to affect the correspondence between JOLs and later recall: A priori and a posteriori. A priori associations correspond to associations in the forward direction (e.g., door-open) and refer to the likelihood that a cue word will elicit a target word. A posteriori associations refer to the perceived association between a cue and target that is only apparent when both are viewed simultaneously. A posteriori associations include weakly associated pairs (e.g., door-stop) and strongly associated pairs, but in the backward direction (e.g., knob-door; see too Koriat, 1981). Koriat and Bjork reported that initial JOL ratings were generally well predictive of later recall but showed an illusion of competence on a posteriori pairs in which initial JOLs often exceeded later recall rates. Additional experiments indicated that the illusion of competence on a posteriori pairs was likely dependent upon the direction of the association rather than the strength of association, as JOLs were well-calibrated to later recall for weakly related pairs-a pattern replicated by other researchers (Castel, McCabe, & Roediger, 2007). The illusion of competence is consistent with Koriat's (1997) cue-utilization model in which intrinsic, extrinsic, and mnemonic cues that facilitate ease of processing (including associative relations between the cue and target in a posteriori pairs) can affect JOL accuracy (Dunlosky & Matvey, 2001; Tiede & Leboe, 2009).
+Interest in the correspondence between memory predictions at study and later recall accuracy for word pairs is not new. In an early demonstration, Arbuckle and Cuddy (1969) reported a relationship between word-pair association and recall performance in which participants generally perceived strong (vs. weak) associates as more easily remembered. More recently, Koriat and Bjork (2005) showed the associative direction of cue-target pairs can similarly affect the correspondence between JOL memory predictions and later recall. In particular, two directions of associations were suggested to affect the correspondence between JOLs and recall: A priori and a posteriori. A priori associations correspond to forward associations (e.g., door-open) and refer to the likelihood that a cue will elicit a target word. A posteriori associations refer to a perceived association between cue and target that is only apparent when both are presented simultaneously. A posteriori associations include weak associates (e.g., door-stop) and strong associates presented in the backward direction (e.g., knob-door; see too Koriat, 1981). Koriat and Bjork reported that initial JOL ratings were generally predictive of later recall but showed an illusion of competence on a posteriori pairs in which JOLs often exceeded later recall rates. Subsequent experiments indicated that the illusion of competence on a posteriori pairs was dependent upon the direction of the association rather than the associative strength as JOLs were well-calibrated to recall for weak forward associates—a pattern replicated by other researchers (Castel, McCabe, & Roediger, 2007). The illusion of competence is consistent with Koriat’s (1997) cue-utilization model in which intrinsic, extrinsic, and mnemonic cues that facilitate processing (including associative relations between the cue and target in a posteriori pairs) can affect JOL accuracy (Dunlosky & Matvey, 2001; Tiede & Leboe, 2009).
 
-When examining the role of cue-target associations, differences in direction and magnitude are often indexed through free-association norms. Such norms are collected using a free-association task in which participants are shown a cue word and are instructed to respond with the first word that comes to mind. From these norms, the probability of responding to word A with word B (forward-associative strength, FAS) can then be computed as an approximate measure of the forward associative overlap shared between pairs. Similarly, backward-associative strength (BAS), or the probability of responding to word B with A in an A-B pair, can be also computed (see Nelson, McEvoy, & Dennis, 2000). Thus, norms are useful for assessing the associative strength and direction of cue-target pairs when evaluating their effects on JOLs and recall accuracy.
+When examining the role of cue-target associations, direction and magnitude are often indexed through free-association norms. Such norms are collected using a free-association task in which participants report the first word that comes to mind in the presence of a cue word. From these norms, the probability of responding to word A with word B (forward-associative strength, FAS) can be computed as an approximate measure of the forward-associative overlap shared between pairs. Similarly, backward-associative strength (BAS), or the probability of responding to word B with A in an A-B pair, can be computed (see Nelson, McEvoy, & Dennis, 2000). Free association norms are useful for assessing the associative strength and direction of cue-target pairs when evaluating their effects on JOLs and recall accuracy. These norms are commonly used across several judgment tasks, including both JOL tasks and the related Judgment of Associative Memory task (JAM; Maki, 2007), which has shown that individuals routinely over-estimate the associative relatedness of paired associates (measured in FAS), especially for weak associates (i.e., when a posteriori relatedness is high but a priori relatedness is low). This has implications for JOL studies, as individuals may perceive paired associates as being more related than their normed strengths imply, and if so, they may assign an inaccurate JOL when asked to make predictions about recall.
 
-Using the Nelson, McEvoy, and Schrieber (2004) free association norms, Castel et al. (2007) further evaluated the correspondence between JOLs and recall accuracy by comparing pairs that were strongly or weakly related in the forward direction or were unrelated. Additionally, their study also contained a set of identical pairs to evaluate the effects of pair similarity given evidence that identical word pairs are poorly remembered (e.g., Tulving, 1974). The authors reasoned that for identical pairs, participants may rely upon item similarity given the items are perceptually and semantically identical when making JOL ratings. As a result, JOL ratings for identical pairs would be high though their recall would be low, producing an illusion of competence. Indeed, an illusion of competence was found for identical pairs (but not for weakly and strongly related pairs in the forward direction) and this pattern was found both when study duration was limited to 4 seconds and when study was self-paced. The illusion of competence pattern found for identical pairs is particularly intriguing given identical pairs provided participants with a cue word that was perfectly predictive of the target. Nevertheless, recall rates were worse than those for strongly related forward pairs, contributing to the illusion of competence.
+Using the Nelson, McEvoy, and Schreiber (2004) free-association norms, Castel et al. (2007) further evaluated the correspondence between JOLs and recall accuracy using strong and weak forward associates or unrelated pairs. Additionally, their study also contained identical pairs to evaluate pair similarity effects given identical cue-target pairs are generally poorly remembered (e.g., Tulving, 1974). The authors reasoned that for identical pairs, participants may rely upon item similarity (vs. cue effectiveness) given the items are perceptually and semantically identical when making JOL ratings. As a result, JOL ratings for identical pairs would be high though their recall would be low, producing an illusion of competence. Indeed, an illusion of competence was found for identical pairs (but not for the forward strong and weak associates) and this pattern was found both when study duration was self-paced and timed. The illusion of competence pattern found for identical pairs is particularly intriguing given identical pairs provided participants with a cue word that was perfectly predictive of the target. Nevertheless, recall rates were lower than strong associates, contributing to the illusion.
 
-Although previous work has demonstrated that semantic relations can induce an illusion of competence for identical pairs, an important question is whether the illusion of competence for identical pairs was due to identical pairs being a perfect match perceptually and semantically, or because identical pairs are symmetrical in association. Symmetrical in this case refers to cue-target pairs that are strongly associated to each other in both directions (e.g., On-Off) according to word association norms. Based on Koriat (1997), we suggest that participants prioritize semantic relatedness over consideration of retrieval conditions when providing JOLs at study. Therefore, strongly associated pairs would likely encourage JOL ratings that would exceed later recall when the retrieval target was ambiguous such as backwards pairs. A similar pattern would likely also emerge for symmetrical pairs given the cue word does not directly converge upon on obvious target (as in forward pairs). Therefore, evaluating the relationship between JOLs and later recall for symmetrical pairs is important for determining how association affects JOLs outside of when cue-target pairs are perceptually and semantically identical.
+Although prior work has demonstrated that semantic relations can induce an illusion of competence for identical pairs, an important question is whether the illusion of competence for identical pairs resulted from a perfect perceptual and semantic match, or because identical pairs are symmetrical associates. Symmetrical in this case refers to cue-target pairs that are strongly associated to each other in both directions (e.g., On-Off) according to word association norms. Based on Koriat (1997), we suggest that participants prioritize semantic relatedness over consideration of the cue effectiveness for recalling the target when providing JOLs. Therefore, strong associates would likely encourage JOL ratings that would exceed later recall when the retrieval target was ambiguous such as backwards associates. A similar pattern would likely also emerge for symmetrical associates given the cue does not directly converge upon an obvious target (as forward associates). Therefore, evaluating the relationship between JOLs and later recall for symmetrical pairs is important for determining how association affects JOLs outside of when cue-target pairs are perceptually/semantically identical.
 
-In the present study, we further evaluated the illusion of competence between JOLs and recall accuracy by examining the direction of association. Specifically, we examined differences in JOL ratings and recall performance (and the calibration between the two) for forward, backward, and symmetrical paired associates relative to unrelated word pairs. To date, no study has investigated illusions of competence for JOLs on symmetrical associates. Unlike the identical word pairs used by Castel et al. (2007), symmetrical associates contain forward and backward associations that are equivalent, without having to rely on the use of repeated words. Because symmetrical pairs are semantically related, they can be directly compared to forward and backward associates when using word association norms. This allowed us to equate study lists on levels of FAS and BAS as we could then match pairs within each list on levels of associative overlap norms across pair direction. Doing so allowed us to control for the effects of association strength on recall, as cued-recall performance has been shown to improve as the associative strength between item pairs increases (Nelson, et al., 2004).
+In the present study, we further evaluated the illusion of competence between JOLs and recall accuracy by examining the direction of association. Specifically, we examined differences in JOL ratings and recall performance (and the calibration between the two) for forward, backward, and symmetrical associates versus unrelated pairs. To date, no study has investigated the illusion of competence for JOLs on symmetrical associates. Unlike the identical pairs used by Castel et al. (2007), symmetrical associates contain equivalent forward and backward associations without word repetitions. Since symmetrical associates are semantically related, they can be compared to forward and backward associates using word association norms. We were therefore able to equate associate types on associative strength (FAS and BAS), allowing us to control for these associative variables given cued-recall is generally sensitive to associative strength (Nelson, et al., 2004).
 
-	Finally, to further investigate the relationship between JOL estimations and later cued-recall across experiments, we constructed calibration plots in which JOLs ratings are plotted against their corresponding recall accuracy (Nelson & Dunlosky, 1991; see too Roediger, Wixted, & Desoto, 2012; Sauer, Brewer, Zweck, & Weber, 2010 for use of calibration plots with confidence ratings). The use of these plots provides the advantage of pinpointing the level of JOL rating at which the illusion of competence emerges (i.e., low vs. high JOL ratings) and in doing so, more accurately characterizes the effects of associative direction on JOLs.
-	
-Comparisons of different associative pairs and their respective calibration plots were conducted across three experiments to test the reliability of the illusion of competence. We first evaluate the correspondence between JOLs and recall accuracy when study and JOL ratings for word pairs were self-paced (Experiment 1), when study and JOL ratings were restricted through the use of a study deadline designed to reduce excessively long study durations thereby equating study/JOL ratings across pair types (Experiment 2), and when JOL ratings were delayed and were provided after study as a means to increase JOL accuracy (Experiment 3; see Dunlosky & Nelson, 1992; Rhodes & Tauber, 2011). To preview, illusions of competence were found for backward, symmetrical, and unrelated pairs, but not for forward pairs, and these patterns were found consistently across experiments. Thus, the effects of associative direction on JOLs and recall appear to be consistent across different methodologies.
+# Measuring JOL Accuracy
 
+Metacognitive studies traditionally distinguish between two types of JOL accuracy: Absolute and relative accuracy. Absolute accuracy refers to the overall difference between predicted and actual performance such that the magnitude of an individual’s predictions corresponds to their performance at test (Scheck, Meeter, & Nelson, 2004; Connor, Dunlosky, & Hertzog, 1997). For example, absolute accuracy between JOLs and recall would be considered perfect if items given JOL ratings of 50 were subsequently recalled correctly 50% of the time. We refer to this relationship as the calibration between JOLs and recall. Item calibration has been researched extensively within the context of confidence ratings across various research domains, including eyewitness testimony (Tekin and Roediger, 2017; Juslin, Olsson, & Winman, 1996) and facial recognition (Weber & Brewer, 2003).
 
-# Experiment One: Self-Paced Study Instructions
+JOL accuracy has also been assessed in terms of the relative accuracy between predicted and actual performance. For example, if items A and B are studied together, and item A receives a higher JOL than item B, a person’s relative accuracy would be perfect if the likelihood of recall at test is greater for item A than item B (i.e., high JOLs are recalled more frequently than low JOLs; Van Overschelde & Nelson, 2003). We refer to this type of accuracy relationship as the resolution between judgments and recall. Though the present study is primarily interested in assessing accuracy in terms of the calibration between JOLs and recall, we report Goodman-Kruskal Gamma correlations alongside all calibration plots (*g*; Goodman & Kruskal, 1954) as a metric of JOL resolution.
+
+Though calibration and resolution provide unique insights into the relationship between JOLs and recall, for the present study, we primarily focus on JOL calibration to investigate whether the illusion of competence occurs similarly across all levels of JOL ratings (i.e., are participants consistently providing high JOLs to backward pairs even when they are not correctly recalling the pairs at test?). To this end, we constructed calibration plots in which JOLs ratings are plotted against their corresponding recall accuracy (Nelson & Dunlosky, 1991; see too Roediger, Wixted, & Desoto, 2012; Sauer, Brewer, Zweck, & Weber, 2010, for use of calibration plots with confidence ratings). The use of these plots provides the advantage of pinpointing the JOL rating level at which the illusion of competence emerges (i.e., low vs. high JOL ratings) and in doing so, we can more accurately characterize the effects of associative direction on JOLs relative to single JOL scores (e.g., mean calibration scores for absolute accuracy, gamma scores for relative accuracy).
+
+Comparisons of different associative pairs and their respective calibration plots were conducted across four experiments to test the reliability of the illusion of competence. We first evaluated the calibration between JOLs and recall when study and JOL ratings for associates were self-paced and JOLs were made concurrently at the time of study (Experiment 1), when study/JOL ratings were equated across associate types (Experiment 2), when JOLs were elicited immediately following presentation of a cue-target pair (Experiment 3), and when JOL ratings were elicited after a delay as a means of increasing JOL accuracy (Experiment 4; see Dunlosky & Nelson, 1992; Rhodes & Tauber, 2011). To preview, illusions of competence were found for backward, symmetrical, and unrelated pairs, but not for forward associates, and these patterns were found consistently across experiments. Thus, the effects of associative direction on JOLs and recall appear to be consistent across different methodologies.
+
+# Experiment One: Concurrent JOLs with Self-Paced Study
 
 In Experiment 1, we followed a similar design to Koriat and Bjork (2005) and Castel et al. (2007) to evaluate the effects of associative direction on JOL ratings and recall. The goal of this experiment was to replicate illusion of competence findings for backward associates and compare this pattern to forward and symmetrical associates and unrelated pairs. We expected that an illusion of competence would be related to the effectiveness of the cue word to elicit the target word. For backward pairs, although the cue and target word are ostensibly related, the associative direction between the items makes the cue a poor predictor of the target word and therefore, we expected a robust illusion of competence. We similarly expected that unrelated pairs would show an illusion of competence given these cues are also a poor predictor of an unrelated target. We note however, that Castel et al. reported that JOL ratings accurately predicted later cued-recall rates on unrelated pairs, which suggests that participants are perhaps better able to appropriately adjust their JOL ratings when cue-target pairs share no association. Our experiment provides another test of this pair type. We further expected that an illusion of competence would emerge for symmetrical pairs, though to a lesser degree, as symmetrical pairs have an association in the forward direction. Finally, we expected that JOLs would be well calibrated to later recall for forward pairs as the cue would be an accurate predictor of the target.  
 
@@ -112,7 +117,7 @@ In Experiment 1, we followed a similar design to Koriat and Bjork (2005) and Cas
 
 ### Participants
 
-Thirty-one University of Southern Mississippi undergraduates participated in this study for partial course credit. As described below, three participants were excluded for failure to report 10% or more of their JOL responses, leaving 28 participants available for analysis. All participants were native English speakers and had normal or corrected-to-normal color vision. A sensitivity analysis conducted with G*Power (Faul, Erdfelder, Lang, & Buchner, 2007) indicated that our sample size provided adequate power (.80) to detect a small effect size (Cohen's d = 0.27) or larger.
+Thirty-one University of Southern Mississippi undergraduates participated in this study for partial course credit. As described below, three participants were excluded for failure to report 10% or more of their JOL responses, leaving 28 participants available for analysis. All participants were native English speakers and had normal or corrected-to-normal color vision. A sensitivity analysis conducted with G\*Power (Faul, Erdfelder, Lang, & Buchner, 2007) indicated that our sample size provided adequate power (.80) to detect a small effect size (Cohen's *d* = 0.27) or larger.
 
 ### Materials
 
@@ -370,9 +375,9 @@ mean(r2$S)
 
 Prior to conducting analyses, all data was screened for missing responses and outliers (i.e., JOLs that were outside of the 0-100 range) which were removed. For subjects with fewer than 10% missing JOL responses, these missing responses were imputed in R using the mice package (Van Buuren & Groothuis-Oudshoorn, 2011). Data imputation was used to minimize the total number of JOL trials excluded in the analyses. Three participants were missing greater than 10% of their total JOL responses and were removed from the subsequent analyses, leaving 28 participants for analysis. For these remaining participants, less than 1% of their total JOL trials were imputed, which were randomly distributed across different pair types. Recall was scored such that missing recall responses were scored as incorrect (which were likely skipped by participants), but misspellings of correct items were counted as correct.
 
-A p < .05 significance level was used for all analyses unless noted otherwise. Partial-eta squared (np2) and Cohen's d effect size indices were included for all significant Analyses of Variance (ANOVAs) and t-tests, respectively. The top panel of Figure 1 plots mean JOL ratings and cued-recall rates as a function of word pair type. Individual comparisons across JOLs and correct recall including effect size estimates are reported in the Appendix (Table A4).
+A p < .05 significance level was used for all analyses unless noted otherwise. Partial-eta squared (np2) and Cohen's d effect size indices were included for all significant Analyses of Variance (ANOVAs) and t-tests, respectively. Figure 1 (top left) plots mean JOL ratings and cued-recall rates as a function of word pair type. Individual comparisons across JOLs and correct recall including effect size estimates are reported in the Appendix (Table A4).
 
-A 2 (Measure: JOL vs. Recall) � 4 (Pair Type: Forward vs. Backward vs. Symmetrical vs. Unrelated) within-subject ANOVA was conducted to test for differences between mean JOL ratings and recall rates across the four associative pair types. A significant effect of measure was found, F(1, 27) = 21.49, MSE = 616.80,  np2 = .24, which indicated that across pair types, JOL ratings exceeded later recall rates (57.97 vs. 42.59). An effect of pair type was also found, F(3, 81) = 266.52, MSE = 108.88 np2 = .67, in which JOL ratings/recall rates were greatest for symmetrical pairs (71.64), followed by forward pairs (68.21), backward pairs (66.09), and unrelated pairs (25.96). All comparisons across directional groups were statistically different, ts >= 2.95, ds >= 0.24, except for backward and forward pairs, which was marginal, t(27) = 1.82, SEM = 3.31, p = .07, d = 0.16. Critically, a significant interaction was also found, F(3, 81) = 29.41, MSE = 81.89, np2 = .14. A series of follow up t-tests confirmed a robust illusion of competence for backward pairs in which JOLs were greater than later recall (66.09 vs. 33.48), t(27) = 8.74, SEM = 4.67, d = 2.17. An illusion of competence was also found for symmetrical pairs (71.64 vs. 58.84), t(27) = 3.04, SEM = 4.42, d = 0.41, and unrelated pairs (25.96 vs. 10.63), t(27) = 4.86, SEM = 3.31, d = 0.90, though at a lesser magnitude. For forward pairs however, JOL ratings did not differ from later recall (68.21 vs. 67.41), t < 1.
+A 2 (Measure: JOL vs. Recall) X 4 (Pair Type: Forward vs. Backward vs. Symmetrical vs. Unrelated) within-subject ANOVA was conducted to test for differences between mean JOL ratings and recall rates across the four associative pair types. A significant effect of measure was found, F(1, 27) = 21.49, MSE = 616.80,  np2 = .24, which indicated that across pair types, JOL ratings exceeded later recall rates (57.97 vs. 42.59). An effect of pair type was also found, F(3, 81) = 266.52, MSE = 108.88 np2 = .67, in which JOL ratings/recall rates were greatest for symmetrical pairs (71.64), followed by forward pairs (68.21), backward pairs (66.09), and unrelated pairs (25.96). All comparisons across directional groups were statistically different, ts >= 2.95, ds >= 0.24, except for backward and forward pairs, which was marginal, t(27) = 1.82, SEM = 3.31, p = .07, d = 0.16. Critically, a significant interaction was also found, F(3, 81) = 29.41, MSE = 81.89, np2 = .14. A series of follow up t-tests confirmed a robust illusion of competence for backward pairs in which JOLs were greater than later recall (66.09 vs. 33.48), t(27) = 8.74, SEM = 4.67, d = 2.17. An illusion of competence was also found for symmetrical pairs (71.64 vs. 58.84), t(27) = 3.04, SEM = 4.42, d = 0.41, and unrelated pairs (25.96 vs. 10.63), t(27) = 4.86, SEM = 3.31, d = 0.90, though at a lesser magnitude. For forward pairs however, JOL ratings did not differ from later recall (68.21 vs. 67.41), t < 1.
 
 We next assessed the correspondence between the JOLs provided at study and correct recall rate for each of the pair types in a series of calibration plots. In these plots, JOLs were first rounded to the nearest 10% increment which were then plotted against the proportion of correct recall for items that were rated at that increment. For instance, the 0% JOL increment contains the proportion of correct recall for items given an initial judgment of 0%, the 10% increment contains the proportion of correct recall for items given an initial judgment of 10%, and so on.
 
@@ -409,7 +414,7 @@ tapply(dat2.JOL.RT$RT,
 
 JOL ratings provided in Experiment 1 were made when study was self-paced, which may have affected the relative calibration between JOL ratings and later recall. Indeed, an analysis of encoding durations revealed significant differences across pairs (F(3, 81) = 22.69, MSE = 200094.01, np2 = .35) in which encoding duration was slowest for backward pairs (4748.60 ms, SD = 3650.12)  followed by forward pairs (4699.89 ms, SD = 3033.34 ms), symmetrical pairs (4269.57 ms, SD = 2909.20 ms), and unrelated pairs (3923.51 ms, SD = 2653.10 ms). Hertzog, Dixon, Hultsch, & MacDonald (2003)  reported that individuals spend more time studying pairs that are perceived to be more difficult to remember. Given the recall rates reported above, we would have expected that participants would have spent more time studying unrelated pairs relative to the other pair types, though this was not the case. Instead, since more time was allocated towards study of backward pairs, it is possible that participants noticed the asymmetrical association and placed additional efforts towards studying the pair. If so, the relative magnitude of the illusion of competence may have been moderated by study duration which could have affected recall rates (and JOL ratings). Thus, to control for particularly long study durations, Experiment 2 evaluated whether restricting the amount of time participants are able to study each word pair and provide a JOL rating affected the illusion of competence pattern found in Experiment 1.
 
-#Experiment Two: Response Deadline at Study
+#Experiment Two: Concurrent JOLS with a Study Deadline
 
 In Experiment 2, we tested whether limiting the amount of time available at study would affect the calibration between JOLs and later recall. We expected that JOL overestimation will increase relative to Experiment 1, as participants would be less likely to increase the study duration for pairs perceived as being more difficult. Recall was therefore expected to be less accurate across all pair types relative to Experiment 1. As a result, we expected that lower recall rates would concomitantly increase the magnitude of the illusion of competence which would affect all pair types including forward pairs.
 
@@ -665,21 +670,20 @@ p1;t1;SEM1
 
 ```
 
-Figure 1 (second panel) plots mean JOL ratings and cued-recall rates as a function of word pair type for Experiment 2. Individual comparisons across JOLs and correct recall including effect size estimates are reported in the Appendix (Table A4). Using the same ANOVA as Experiment 1, an effect of measure was detected, F(1, 31) = 17.99, MSE = 772.82, np2 = .13, indicating that JOL rates were greater than subsequent recall rates (52.83 vs. 41.91). An effect of pair type was also found, F(3, 93) = 233.47, MSE = 105.03, np2 = .63, indicating that JOL/recall rates were greatest for symmetrical pairs (67.18), followed by forward pairs (61.07), backward pairs (59.08), and unrelated pairs (23.97). Statistical differences were detected across all comparisons, ts >= 5.02, ds >= 0.46, except for forward and backward pairs, which were only marginally different t(31) = 1.64, SEM = 3.09, p = .07, d = 0.12. A significant interaction was also found, F(3, 93) = 56.41, MSE = 74.91, np2 = .14. Post-hoc tests indicated that the illusion of competence replicated for backward pairs, as JOLs were greater than later recall (59.08 vs. 31.72), t(31) = 9.06, SEM = 3.14, d = 1.71. Similar patterns were also found for symmetrical pairs (67.18 vs. 59.30), t(31) = 2.74, SEM = 3.00, d = 0.54, and unrelated pairs (23.97 vs. 11.33), t(31) = 4.26, SEM = 3.09, d = 1.20, though again, at a lower magnitude. Again, an illusion of competence was not found for forward pairs, as JOL ratings were equivalent to later recall (61.07 vs. 65.31), t(31) = 1.39, SEM = 3.18, p = .18.
+Figure 1 (top right) plots mean JOL ratings and cued-recall rates as a function of word pair type for Experiment 2. Individual comparisons across JOLs and correct recall including effect size estimates are reported in the Appendix (Table A4). Using the same ANOVA as Experiment 1, an effect of measure was detected, F(1, 31) = 17.99, MSE = 772.82, np2 = .13, indicating that JOL rates were greater than subsequent recall rates (52.83 vs. 41.91). An effect of pair type was also found, F(3, 93) = 233.47, MSE = 105.03, np2 = .63, indicating that JOL/recall rates were greatest for symmetrical pairs (67.18), followed by forward pairs (61.07), backward pairs (59.08), and unrelated pairs (23.97). Statistical differences were detected across all comparisons, ts >= 5.02, ds >= 0.46, except for forward and backward pairs, which were only marginally different t(31) = 1.64, SEM = 3.09, p = .07, d = 0.12. A significant interaction was also found, F(3, 93) = 56.41, MSE = 74.91, np2 = .14. Post-hoc tests indicated that the illusion of competence replicated for backward pairs, as JOLs were greater than later recall (59.08 vs. 31.72), t(31) = 9.06, SEM = 3.14, d = 1.71. Similar patterns were also found for symmetrical pairs (67.18 vs. 59.30), t(31) = 2.74, SEM = 3.00, d = 0.54, and unrelated pairs (23.97 vs. 11.33), t(31) = 4.26, SEM = 3.09, d = 1.20, though again, at a lower magnitude. Again, an illusion of competence was not found for forward pairs, as JOL ratings were equivalent to later recall (61.07 vs. 65.31), t(31) = 1.39, SEM = 3.18, p = .18.
 
 We again constructed calibration plots to qualitative examine the specific JOL rates that overestimations emerged (Figure 3). Consistent with Experiment 1, overestimations emerged at different JOL ratings for each pair type. Overestimations were found for unrelated and backward pairs at relatively low JOL ratings (> 20% and 40%, respectively), but at a higher JOL rating for symmetrical pairs (> 70%) and only at the highest JOL rating (100%) for forward pairs. These patterns were confirmed by effects of pair type, F(3, 93) = 95.86, MSE = 1365.79, np2 = .76, JOL increment, F(10, 310) = 5.57, MSE = 1321.93, np2 = .15, and a significant interaction, F(30, 930) = 2.98, MSE = 793.78, np2 = .09.
 
 ##Discussion
 
-The results of Experiment 2 largely followed Experiment 1 in which initial JOL ratings exceeded later recall for backward, symmetrical, and unrelated pairs-a pattern that was particularly large for backward pairs. For forward pairs, in which the cue word is strongly predictive of the target, JOLs closely approximated later recall rates, indicating that participants were well calibrated for these pairs. Calibration plots also yielded similar patterns to Experiment 1 in which overestimations emerged at early JOL ratings for unrelated pairs, at higher ratings for backward and symmetrical pairs, and only at high levels for forward pairs. Thus, in contrast to our predictions, the use of study deadlines did not affect the illusion of competence patterns.
+The results of Experiment 2 largely followed Experiment 1: JOL ratings exceeded recall for backward, symmetrical, and unrelated pairs which was particularly robust for backward pairs. For forward associates, JOLs closely approximated later recall rates, indicating that participants were well calibrated. Calibration plots also yielded similar patterns to Experiment 1 in which overestimations emerged at early JOL ratings for unrelated pairs, at higher ratings for backward and symmetrical pairs, and only at the highest recall rates for forward pairs. Thus, in contrast to our prediction, the study/rating deadline produced the same illusion of competence pattern as Experiment 1.
 
-Although study deadlines restricted the maximum amount of time for participants to study the pair and provide a JOL rating, they only ensured that participants responded before a deadline, meaning that participants may have still encoded pairs at different rates. We therefore examined encoding durations for each of the pair types and found that, unlike Experiment 1, encoding durations were equivalent across the four pair types (F(3, 93) = 0.19, MSE = 26598.29, p = .90). Thus, whether participants are given self-paced study or required to study pairs within a 5 s deadline, there are no differences in the correspondence between JOL ratings and later recall, a pattern that was similarly reported by Castel et al. (2007), though without the use of symmetrical pairs.
+Although study deadlines restricted the maximum amount of time for participants to study the pair and provide a JOL rating, they only ensured that participants responded before a deadline, meaning that participants still may have still encoded pairs at different rates. An analysis of encoding durations indicated that study/rating durations were equivalent across the four pair types, F < 1. Thus, whether participants are given self-paced study or are required to study pairs within a 5 s deadline, there are no differences in the correspondence between JOL ratings and later recall (cf. Castel et al., 2007). 
 
-Since encoding durations do not appear to affect the illusion of competence, we tested whether the illusion would persist using the delayed JOL task-a method that has been shown to elicit more accurate JOL ratings (Nelson & Dunlosky, 1991). The delayed JOL task requires that participants provide JOL ratings when word pairs are removed from view and are not readily available. Dunlosky and Nelson (1992) proposed that immediate JOLs are less accurate due to noise from short-term memory that is present at encoding but absent at recall. Therefore, removing pairs from participants while JOL ratings are made may encourage participants to process pairs as if they were retrieving them thereby making JOL ratings more accurate. Rhodes and Tauber (2011) confirmed this pattern in a meta-analysis, showing that JOLs made after a delay are consistently more accurate and even provide a small boost to recall performance versus immediate JOLs. Thus, delayed JOLs may be more accurate as the judgment is being elicited in the absence of the studied information, which mimics conditions at recall.
 
-#Experiment Three: Delayed Judgments of Learning
+#Experiment Three: Immediate JOLs
 
-In Experiment 3, we tested whether a delayed JOL manipulation would reduce the illusion of competence by producing JOL ratings that more accurately reflect performance at test. Based on Rhodes and Tauber (2011) we expected that delayed JOLs will enhance JOL accuracy, reducing the illusion of competence. Given the illusion of competence was robust for backward pairs, we anticipated that the illusion would be reduced, rather than eliminated. We similarly constructed calibration plots to qualitatively evaluate JOLs as a function of recall accuracy.
+Since self-paced versus restricted encoding durations do not appear to affect the illusion of competence, we next evaluated whether the illusion would hold when using an immediate JOL task, in which JOLs were elicited immediately following the removal of the study pair (i.e., pairs was not available for reference when providing a JOL). Since the pair is no longer accessible, participants may be more likely to modulate their JOL ratings, leading to improved calibration. Furthermore, whereas our first two experiments used a concurrent JOL task, Experiment 3 allowed us to directly replicate the JOL task employed by Koriat & Bjork (2005) while extending it to include the symmetrical pairs incorporated in Experiments 1 and 2. We similarly constructed calibration plots to qualitatively evaluate JOLs as a function of recall accuracy. 
 
 ##Methods
 
@@ -965,347 +969,454 @@ p1;t1;SEM1
 ```
 
 
-Data screening and imputation followed the same procedure used in Experiment 1, which removed two participants. Overall, data were imputed for less than 1% of trials, which were randomly distributed across associative direction conditions. See the third panel of Figure 1 for mean JOLs and percent correct recall as a function of pair direction.
+Overall JOL ratings were again found to exceed later recall rates (62.32 vs. 43.88), F(1, 32) = 29.04, MSE = 423.65, ηp2 = .28. Additionally, JOLs/recall rates were also found to differ across pair types, F(3, 96) = 282.36, MSE = 123.96, ηp2 = .60. JOL ratings/recall rates were greatest for forward pairs (69.54), followed by symmetrical pairs (67.14), backward pairs (52.30), and unrelated pairs (23.43). Post-hoc tests indicated that comparisons across all pair types differed significantly, ts ≥ 9.85, ds ≥ 1.35, with the exception of forward and symmetrical pairs, which was marginal, t(32) = 1.92, SEM = 1.29, p = .06, d = 0.18.
 
-Using the same ANOVA as Experiment 1, JOL ratings were again found to exceed later recall rates (62.32 vs. 43.88), F(1, 32) = 29.04, MSE = 423.65, np2 = .28, showing that JOL ratings exceeded later recall across associative direction conditions. A significant effect of pair type was also detected, F(3, 96) = 282.36, MSE = 123.96, np2 = .60. Consistent with the pattern of observations reported in Experiment 1, JOL ratings/recall rates were greatest for symmetrical pairs (74.63), followed by forward pairs (71.84), backward pairs (70.46), and unrelated pairs (33.10). Post-hoc tests indicated that comparisons across all directional groups were statistically different ts >= 2.42, ds >= 0.22, with the exception of the comparison between backward and forward pairs, t(32) = 1.73, SEM = 1.25, p = .07, d = 0.12, and forward and symmetrical pairs, t(32) = 1.73, SEM = 1.46, p = .08, d = 0.46. 
-A significant interaction was also found, F(3, 96) = 40.15, MSE = 48.44, np2 = .13, and follow up tests indicated a similar pattern of overestimation as Experiment 1. Overall, the illusion of competence was strongest for backward pairs, as this condition displayed the greatest disparity between JOL ratings and proportion of correct recall (70.50 vs. 34.09), t(32) = 9.28, SEM = 4.08, d = 2.87. Similar patterns of overestimation were observed for symmetrical pairs (74.29 vs. 60.00), t(32) = 3.39, SEM = 4.38, d = 0.92, and unrelated pairs (32.93 vs. 13.94), t(32) = 4.80, SEM = 4.12, d = 1.24, but again, JOL ratings and later recall rates were equivalent on forward pairs (71.58 vs. 67.50), t(32) = 1.19, SEM = 3.55, p = .24. Table A4 displays comparisons across all associative direction groups for both JOLs and cued-recall performance.
+A significant interaction was again found, F(3, 96) = 40.15, MSE = 48.44, ηp2 = .13, and follow up tests indicated a similar pattern of overestimation as Experiments 1 and 2. Overall, the illusion of competence was greatest for backward pairs (70.50 vs. 34.09), t(32) = 9.28, SEM = 4.08, d = 2.87, and similar patterns of overestimation were observed for symmetrical pairs (74.29 vs. 60.00), t(32) = 3.39, SEM = 4.38, d = 0.92, and unrelated pairs (32.93 vs. 13.94), t(32) = 4.80, SEM = 4.12, d = 1.24, but again, JOL ratings and recall rates were equivalent on forward pairs (71.58 vs. 67.50), t(32) = 1.19, SEM = 3.55, p = .24.
 
-Calibration plots (Figure 4)  showed JOLs following similar overestimation patterns as Experiment 1 in which JOL overestimations emerged at low JOL rates for unrelated pairs (20%) and at higher rates for backward (50%) and symmetrical pairs (80%). Of note, overestimations were again found on forward pairs, but only at the highest JOL ratings (90-100%), but at higher JOL ratings for symmetrical and forward pairs. These patterns were confirmed by effects of pair type, F(3, 96) = 63.41, MSE = 1243.58, np2 = .73, JOL increment, F(10, 320) = 7.96, MSE = 1297.96, np2 = .20,  and a significant interaction between the two, F(30, 960) = 2.15, MSE = 849.07, np2 = .06. 
+Calibration plots (Figure 4) showed JOLs following similar overestimation patterns as Experiment 1 in which JOL overestimations emerged at low JOL rates for unrelated pairs (20%) and at higher rates for backward (50%) and symmetrical pairs (80%). Overestimations were again found on forward pairs, but only at the highest JOL ratings (90-100%). These patterns were confirmed by effects of pair type, F(3, 96) = 63.41, MSE = 1243.58, ηp2 = .73, JOL increment, F(10, 320) = 7.96, MSE = 1297.96, ηp2 = .20, and a significant interaction between the two, F(30, 960) = 2.15, MSE = 849.07, ηp2 = .06.
 
-#Cross Experimental Analyses
+##Disussion
 
-```{r pooled, include=FALSE}
-####Setup####
-library(reshape)
-library(mice)
-library(ez)
-library(ggplot2)
-cleanup = theme(panel.grid.major = element_blank(), 
-                panel.grid.minor = element_blank(), 
-                panel.background = element_blank(), 
-                axis.line.x = element_line(color = "black"),
-                axis.line.y = element_line(color = "black"),
-                legend.key = element_rect(fill = "white"),
-                text = element_text(size = 15))
+The results of Experiment 3 were consistent with Experiments 1 and 2. Overestimation was greatest for backward and unrelated word pairs and these overestimations occurred across nearly all JOL ratings in the calibration plots. For both pairs, correct recall never surpassed 50% at any JOL level, even for JOL ratings of 50% or greater. 
+By requiring participants to postpone their JOL ratings until completing the study task (vs. concurrently), we reasoned that the calibration between these initial judgments and later recall would improve, as participants would be less prone to overestimation if they were making judgments in the absence the pair. This pattern was not in evidence, as  JOLs were similar to those elicited in Experiment 1 (61.42 vs. 57.97) t(59) = 1.26, SEM = 2.79, and there was no difference in overall recall rates between experiments (43.88 vs. 42.59), t < 1. Thus, the immediate JOL procedure did not provide any benefits to JOL accuracy relative to concurrent JOL study instructions.
 
+#Experiment 4: Delayed JOLs
+
+Given the results of the previous three experiments, we next assessed whether implementing a delayed JOL task would reduce the illusion of competence. Dunlosky and Nelson (1992) proposed that immediate JOLs are less accurate due to noise from short-term memory that is present at encoding but absent at recall. Rhodes and Tauber (2011) confirmed this pattern in a meta-analysis, showing that JOLs made after a delay are consistently more accurate and even provide a small boost to recall performance versus immediate JOLs. Based on this, we expected that delayed JOLs would enhance the accuracy of JOLs thereby reducing the illusion of competence. Given that the illusion of competence was robust for backward pairs, we anticipated that the illusion would be reduced, rather than eliminated. However, this reduction may not necessarily be reflected in the calibration plots, as research by Van Overschelde and Nelson (2006) has shown that delayed JOLs decrease calibration relative to resolution. Thus, Experiment 4 sought to test whether delayed JOLs would decrease the illusion of competence by either increasing mean recall or decreasing the magnitude of JOLs (or potentially doing both) and whether or not any potential changes would be detected when assessing the calibration between JOLs and recall.
+
+##Participants
+
+Thirty-nine undergraduates were recruited from the University of Southern Mississippi undergraduate research pool and completed the study for partial course credit. Data screening was consistent with the procedure used in Experiment 1, and three participants were eliminated, leading to a total of 36 participants included in the analyses.
+
+##Materials and Procedure
+
+Materials in Experiment 4 were identical to those in the previous experiments. The procedure closely followed that of Experiment 3 with the following exception. After participants viewed a single cue-target pair, they pressed a key which advanced them to a new screen in which the cue-target pair was removed and participants were asked to solve an arithmetic problem modeled after the OSPAN task (Turner & Engle, 1989). After completing an OSPAN problem, participants were then presented with the cue-item only (e.g., credit-?) and were asked to type their JOL rating into a dialogue box. Thus, all JOL ratings were elicited after a delay but without an intact pair.
+
+##Results
+
+Figure 1 (bottom right) displays mean JOLs and percent correct recall for each of the four pair types. Consistent with the previous experiments, the same general patterns of results were found. JOL ratings again exceeded later recall rates (59.79 vs. 44.81), F(1, 35) = 19.12, MSE = 800.37, ηp2 = .15. JOLs/recall rates also differed across pair types, F(3, 105) = 266.07, MSE = 97.03, ηp2 = .46, with JOLs/recall greatest for forward pairs (69.16), followed by symmetrical pairs (64.47), backward pairs (47.31), and unrelated pairs (26.98). Post-hoc tests indicated that comparisons across all pair types differed significantly, ts ≥ 4.27, ds ≥ 0.12.
+
+A significant interaction was again detected, F(3, 105) = 77.93, MSE = 51.04, ηp2 = .12, and follow-up tests indicated similar patterns of overestimation reported above. Again, the illusion of competence was greatest for backward pairs as JOLs were significantly greater than recall, (62.60 vs. 32.17), t(35) = 8.61, SEM = 3.66, d = 1.69. This pattern was again found for symmetrical pairs (69.53 vs. 59.73), t(35) = 2.84, SEM = 3.57, d = 0.55, and unrelated pairs (38.33 vs. 16.48), t(35) = 4.99, SEM = 4.54, d = 1.13, though JOL ratings and recall rates were equivalent for forward pairs (67.15 vs. 70.91), t(35) = -1.22.
+
+Finally, calibration plots (Figure 5) showed that JOLs followed a similar overestimation pattern to that observed in Experiment 1, with JOL overestimations emerging at low JOL rates for unrelated pairs (20%) and at higher rates for backward (50%) and symmetrical pairs (80%). We again found overestimations of forward pairs, but only for the highest JOL ratings (90-100%). These patterns were once again confirmed by significant effects of pair type, F(3, 81) = 60.36, MSE = 1779.92, ηp2 = .53, JOL increment, F(10, 270) = 10.92, MSE = 1338.91, ηp2 = .29, the interaction between the two, F(30, 810) = 2.46, MSE = 919.50, ηp2 = .08.
+
+```{r include=FALSE}
+####set up####
+dat = read.csv("scored 11_25.csv")
 options(scipen = 999) ##turn off scientific notation
 
-percentmiss = function(x){ sum(is.na(x)/length(x)) * 100}
+#load libraries and custom functions
+library(ez)
+library(mice)
+library(reshape)
 
+percentmiss = function(x){ sum(is.na(x)/length(x)) * 100}
 source("pairwise_t.R")
 
-####Make the pooled data####
-##read in the data files
-dat1 = read.csv("final data.csv") ##Standard Instructions
-dat2 = read.csv("Delayed final data 10 percent.csv") ##Delayed JOLs
-dat3 = read.csv("T final data 10 percent.csv") ##Response Deadline
+####Data Screening####
+summary(dat)
+table(dat$ExperimentName)
 
-summary(dat1);summary(dat2);summary(dat3)
+#get n
+length(unique(dat$Subject))
 
-##get all the columns to match
-#drop extra columns
-dat2 = dat2[ , -1]
-dat3 = dat3[ , -1]
+#fix listnum
+dat$ListNum2 = rep(1:160)
+dat$ListNum3 = rep('q')
+dat$ListNum.final = paste(dat$ListNum3, dat$ListNum2, sep = "")
 
-dat2 = dat2[ , -4] #drop block column
-dat3 = dat3[ , -c(4, 6:9)]
+dat = dat[ , -c(13)]
 
-#reorder dat2 columns
-dat2 = dat2[c(1,2,3,6,4,5)]
+#add block
+dat$block = c(rep(1, times = 80), rep(2, times = 80))
 
-#reorder dat3 columns
-dat3 = dat3[c(1,2,3,6,4,5)]
+#remove pairs that don't match well enough
+dat2 = subset(dat,
+             dat$percent_match <= 250)
 
-#add ex number columns
-dat1$ex = rep(1)
-dat2$ex = rep(2)
-dat3$ex = rep(3)
+nrow(dat2)/nrow(dat) #lost five percent of trials
 
-##Stick everything together
-nomiss = rbind(dat1, dat2, dat3)
+#check for outliers
+#First remove out of range JOLs
+##out of range values
+summary(dat2$JOL)
+#we have 153 Missing JOLs
+
+#need to remove missing values first
+nomiss = na.omit(dat2)
+nrow(nomiss)/nrow(dat2)
+
+##going to cut out anyone three SDs above or below
+##JOL
+wide.dat = cast(nomiss, Subject ~ block, mean, value = 'JOL')
+wide.dat$meanJOL = apply(wide.dat, 1, mean)
+wide.dat$ZJOL = scale(wide.dat$meanJOL)
+
+##Recall
+wide.dat2 = cast(nomiss, Subject ~ block, mean, value = 'scored')
+wide.dat2$meanRECALL = apply(wide.dat2, 1, mean)
+wide.dat2$ZRECALL = scale(wide.dat2$meanRECALL)
+
+##Combined Wide data
+wide.final = cbind(wide.dat, wide.dat2)
+wide.final = wide.final[ , -c(2:3, 6:8)]
+
+##checking distributions
+hist(wide.dat$meanJOL)
+hist(wide.final$meanRECALL)
+
+####Get Descriptives####
 summary(nomiss)
-nomiss = nomiss[ , -3] #Drop the list number column
 
-#Write the pooled data to a csv for later use
-#write.csv(nomiss, file = "Pooled.csv", row.names = F)
+mean(nomiss$JOL)
+mean(nomiss$scored)
 
-####Analysis Time!####
-colnames(nomiss)[3] = "JOL"
+tapply(nomiss$JOL,
+       nomiss$Direction, mean)
+tapply(nomiss$scored,
+       nomiss$Direction, mean) * 100
 
-#Get recall on the same scale
-nomiss$Recall = nomiss$Recall * 100
+nomiss$scored = nomiss$scored * 100
 
-##melt the data
-##check these names
-long.dat = melt(nomiss, id = c("Subject", "Condition",
-                               "Direction", "ex"))
+#combine by score type
+long.dat = melt(nomiss, id = c("Subject", 'ExperimentName', "percent_match", "recall_cue", "Recall_Response",
+                               "ListNum2", "ListNum.final", 'sorted_JOL_CUE', "sorted_JOL_TARGET",
+                               "block", "JOL_RT", "Direction"))
 
 summary(long.dat)
 
-colnames(long.dat)[5] = "Task"
-colnames(long.dat)[6] = "Score"
+colnames(long.dat)[13] = "Task"
+colnames(long.dat)[14] = "Score"
 
-long.dat$ex = factor(long.dat$ex,
-                     levels = c(1, 2, 3),
-                     labels = c("ex1", "ex2", "ex3"))
+#get descriptives for one-way
+tapply(long.dat$Score,
+       long.dat$Direction, mean)
 
-long.dat$Score[long.dat$Score > 100] = 100
-table(long.dat$Score)
-
-##2 (Task Type) X 4 (Associative Direction)
-ezANOVA(data = long.dat,
-        wid = Subject,
-        within = .(Task, Direction),
-        dv = Score,
-        type = 3)
-
-tapply(long.dat$Score, list(long.dat$Direction, long.dat$Task), mean)
-
-#threeway_model <- aov(Score ~ Task + ex + Direction + Score:Task + Task:ex + Score:ex
-#          + Task:ex:Direction, data = long.dat)
-#summary(threeway_model)
-
+#run some ANOVAS!
+#difference between JOLs and Recall
 model = ezANOVA(data = long.dat,
-                    dv = Score, wid = Subject, 
-                    within = .(Task, Direction),
-                    between = .(ex),
-                    type = 3, detailed = T, return_aov = T)
-
-model
-
-model$ANOVA
+        wid = Subject,
+        within = Task,
+        dv = Score,
+        type = 3,
+        detailed = T)
 
 anovaLength = length(model$ANOVA)
 model$ANOVA$MSE = model$ANOVA$SSd/model$ANOVA$DFd
 model$ANOVA$MSE
 
-####Post Hocs####
-tapply(long.dat$Score, list(long.dat$Direction, long.dat$Task), mean)
+#difference within JOLs and recall across directions
+model = ezANOVA(data = long.dat,
+        wid = Subject,
+        within = Direction,
+        dv = Score,
+        type = 3,
+        detailed = T)
 
-####Post Hocs####
-##post hocs
-tapply(long.dat$Score, list(long.dat$Direction, long.dat$Task), mean)
+anovaLength = length(model$ANOVA)
+model$ANOVA$MSE = model$ANOVA$SSd/model$ANOVA$DFd
+model$ANOVA$MSE
 
-Jol.t = pairwise.t.test.with.t.and.df(long.dat$Score, long.dat$Direction,
-                                      paired = F, p.adjust.method = 'bonferroni')
-Jol.t
+##2 (Task Type) X 4 (Associative Direction)
+model = ezANOVA(data = long.dat,
+                wid = Subject,
+                within = .(Task, Direction),
+                dv = Score,
+                type = 3, detailed = T)
 
-summary(Jol.t)
+anovaLength = length(model$ANOVA)
+model$ANOVA$MSE = model$ANOVA$SSd/model$ANOVA$DFd
+model$ANOVA$MSE
 
-print(Jol.t)[[5]] #T-values
-print(Jol.t)[[6]] #df
+anovaLength = length(model$ANOVA)
+model$ANOVA$MSE = model$ANOVA$SSd/model$ANOVA$DFd
+model$ANOVA$MSE
 
-R.t = pairwise.t.test.with.t.and.df(nomiss$Recall, nomiss$Direction,
-                                    paired = F, p.adjust.method = 'none')
-R.t
+####Updated Post-hocs####
+tapply(long.dat$Score,
+       long.dat$Task, mean)
+tapply(long.dat$Score,
+       long.dat$Task, sd)
 
-print(R.t)[[5]] #T-values
-print(R.t)[[6]] #df
+library(reshape)
 
-#differences across experiments
-jol = subset(long.dat, long.dat$Task == "JOL")
-recall_stuff = subset(long.dat, long.dat$Task == "Recall")
+#newdat = cast(long.dat, Subject ~ Task, mean)
 
-tapply(jol$Score, list(jol$Direction, jol$ex), mean)
+means = tapply(long.dat$Score, list(long.dat$Direction, long.dat$Task), mean)
+sds = tapply(long.dat$Score, list(long.dat$Direction, long.dat$Task), sd)
 
-tapply(long.dat$Score, list(long.dat$ex, long.dat$Task), mean)
+recall = subset(long.dat,
+                long.dat$Task == "scored")
+jol = subset(long.dat,
+             long.dat$Task == "JOL")
 
-pairwise.t.test.with.t.and.df(jol$Score,jol$ex,
-                              paired = F, p.adjust.method = 'bonferroni')
+recall2 = cast(recall[ , -6], Subject ~ Direction, mean)
+jol2 = cast(jol[ , -6], Subject ~ Direction, mean)
 
-x = tapply(long.dat$Score,
-           list(long.dat$Subject, long.dat$ex), mean)
+colnames(recall2)[3] = "f"
+colnames(jol2)[3] = "f"
 
-x = as.data.frame(x)
+summary(jol2)
+summary(recall2)
 
-x = melt(x)
-x = na.omit(x)
+#check for outliers, especially in u JOLs
+jol2$zU = scale(jol2$U)
 
-output1 = pairwise.t.test.with.t.and.df(x$value,x$variable,
-                              paired = F, p.adjust.method = 'none')
-output1[[5]]
+####Comparing JOLs and Recall rates####
+#forward pairs
+temp = t.test(jol2$f, recall2$f, paired = T, p.adjust.methods = "bonferroni")
+p1 = round(temp$p.value, 3)
+t1 = temp$statistic
+SEM1 = (temp$conf.int[2] - temp$conf.int[1]) / 3.92
 
-x2 = subset(x,
-            x$variable == "ex2")
-x3 = subset(x,
-            x$variable == "ex3")
-
-temp = t.test(x2$value, x3$value, paired = F)
-(temp$conf.int[2] - temp$conf.int[1]) / 3.92
-
-tapply(x$value, x$variable, mean)
-tapply(x$value, x$variable, sd)
-
-##SEM for forward and backward pairs
-nomiss.f = subset(nomiss, nomiss$Direction == "F")
-nomiss.b = subset(nomiss, nomiss$Direction == "B")
-
-temp = t.test(nomiss.f$JOL, nomiss.b$JOL, paired = T)
-(temp$conf.int[2] - temp$conf.int[1]) / 3.92 #.662
-
-####Bar Chart####
-bar4 = ggplot(long.dat, aes(Direction, Score, fill = Task))
-bar4 = bar4 +
-  stat_summary(fun.y = mean, 
-               geom = "bar",
-               position = "dodge",
-               color = "Black") +
-  stat_summary(fun.data = mean_cl_normal,                
-               geom = "errorbar", 
-               position = position_dodge(width = 0.90),
-               width = 0.2,
-               color = "black") +
-  scale_fill_manual("Task",
-                    values = c("JOL" = "white",
-                               "Recall" = "dimgray")) +
-  cleanup +
-  xlab("Direction") +
-  ylab("Mean % JOL/Recall") +
-  ylim(0,100)
-bar4
-
-##uSE THE NOMISS DATA TO MAKE POOLED CONF PLOTS
-summary(nomiss)
-
-#make direction subsets
-f = subset(nomiss, nomiss$Direction == 'F')
-b = subset(nomiss, nomiss$Direction == 'B')
-s = subset(nomiss, nomiss$Direction == 'S')
-u = subset(nomiss, nomiss$Direction == 'U')
-
-#make binned subsets
-#forward
-f0 = subset(f, f$JOL == 0)
-f0$bin = rep(0)
-f10 = subset(f, f$JOL == 10)
-f10$bin = rep(10)
-f20 = subset(f, f$JOL == 20)
-f20$bin = rep(20)
-f30 = subset(f, f$JOL == 30)
-f30$bin = rep(30)
-f40 = subset(f, f$JOL == 40)
-f40$bin = rep(40)
-f50 = subset(f, f$JOL == 50)
-f50$bin = rep(50)
-f60 = subset(f, f$JOL == 60)
-f60$bin = rep(60)
-f70 = subset(f, f$JOL == 70)
-f70$bin = rep(70)
-f80 = subset(f, f$JOL == 80)
-f80$bin = rep(80)
-f90 = subset(f, f$JOL == 90)
-f90$bin = rep(90)
-f100 = subset(f, f$JOL == 100)
-f100$bin = rep(100)
-
-#backward
-b0 = subset(b, b$JOL == 0)
-b0$bin = rep(0)
-b10 = subset(b, b$JOL == 10)
-b10$bin = rep(10)
-b20 = subset(b, b$JOL == 20)
-b20$bin = rep(20)
-b30 = subset(b, b$JOL == 30)
-b30$bin = rep(30)
-b40 = subset(b, b$JOL == 40)
-b40$bin = rep(40)
-b50 = subset(b, b$JOL == 50)
-b50$bin = rep(50)
-b60 = subset(b, b$JOL == 60)
-b60$bin = rep(60)
-b70 = subset(b, b$JOL == 70)
-b70$bin = rep(70)
-b80 = subset(b, b$JOL == 80)
-b80$bin = rep(80)
-b90 = subset(b, b$JOL == 90)
-b90$bin = rep(90)
-b100 = subset(b, b$JOL == 100)
-b100$bin = rep(100)
+#backward pairs
+temp =  t.test(jol2$B, recall2$B, paired = T)
+p2 = round(temp$p.value, 3)
+t2 = temp$statistic
+SEM2 = (temp$conf.int[2] - temp$conf.int[1]) / 3.92
 
 #symmetrical
-s0 = subset(s, s$JOL == 0)
-s0$bin = rep(0)
-s10 = subset(s, s$JOL == 10)
-s10$bin = rep(10)
-s20 = subset(s, s$JOL == 20)
-s20$bin = rep(20)
-s30 = subset(s, s$JOL == 30)
-s30$bin = rep(30)
-s40 = subset(s, s$JOL == 40)
-s40$bin = rep(40)
-s50 = subset(s, s$JOL == 50)
-s50$bin = rep(50)
-s60 = subset(s, s$JOL == 60)
-s60$bin = rep(60)
-s70 = subset(s, s$JOL == 70)
-s70$bin = rep(70)
-s80 = subset(s, s$JOL == 80)
-s80$bin = rep(80)
-s90 = subset(s, s$JOL == 90)
-s90$bin = rep(90)
-s100 = subset(s, s$JOL == 100)
-s100$bin = rep(100)
+temp = t.test(jol2$S, recall2$S, paired = T)
+p3 = round(temp$p.value, 3)
+t3 = temp$statistic
+SEM3 = (temp$conf.int[2] - temp$conf.int[1]) / 3.92
 
 #unrelated
-u0 = subset(u, u$JOL == 0)
-u0$bin = rep(0)
-u10 = subset(u, u$JOL == 10)
-u10$bin = rep(10)
-u20 = subset(u, u$JOL == 20)
-u20$bin = rep(20)
-u30 = subset(u, u$JOL == 30)
-u30$bin = rep(30)
-u40 = subset(u, u$JOL == 40)
-u40$bin = rep(40)
-u50 = subset(u, u$JOL == 50)
-u50$bin = rep(50)
-u60 = subset(u, u$JOL == 60)
-u60$bin = rep(60)
-u70 = subset(u, u$JOL == 70)
-u70$bin = rep(70)
-u80 = subset(u, u$JOL == 80)
-u80$bin = rep(80)
-u90 = subset(u, u$JOL == 90)
-u90$bin = rep(90)
-u100 = subset(u, u$JOL == 100)
-u100$bin = rep(100)
+temp = t.test(jol2$U, recall2$U, paired = T)
+p4 = round(temp$p.value, 3)
+t4 = temp$statistic
+SEM4 = (temp$conf.int[2] - temp$conf.int[1]) / 3.92
 
-#put it all back together
-f2 = rbind(f0,f10,f20,f30,f40,f50,f60,f70,f80,f90,f100)
-b2 = rbind(b0,b10,b20,b30,b40,b50,b60,b70,b80,b90,b100)
-s2 = rbind(s0,s10,s20,s30,s40,s50,s60,s70,s80,s90,s100)
-u2 = rbind(u0,u10,u20,u30,u40,u50,u60,u70,u80,u90,u100)
+#FIX POST HOCS FOR JOLS/RECALL ACROSS DIRECTION GROUPS
+dat2 = cast(long.dat, Subject ~ Direction, mean)
 
-combined = rbind(f2, b2, s2, u2)
+mean(dat2$B)
+mean(dat2$F)
+mean(dat2$S)
+mean(dat2$U)
 
-#write.csv(combined, file = "pooled_conf binned.csv", row.names = F)
+sd(dat2$B)
+sd(dat2$F)
+sd(dat2$S)
+sd(dat2$U)
+
+temp = t.test(dat2$F, dat2$S, paired = T, p.adjust.methods = "bonferroni")
+p1 = round(temp$p.value, 3)
+t1 = temp$statistic
+SEM1 = (temp$conf.int[2] - temp$conf.int[1]) / 3.92
+
+temp;p1;t1;SEM1
+
+#TABLE A3 - EX4
+
+mean(jol2$f);sd(jol2$f);(sd(jol2$f)/sqrt(39)) * 1.96
+mean(jol2$B);sd(jol2$B);(sd(jol2$B)/sqrt(39)) * 1.96
+mean(jol2$S);sd(jol2$S);(sd(jol2$S)/sqrt(39)) * 1.96
+mean(jol2$U);sd(jol2$U);(sd(jol2$U)/sqrt(39)) * 1.96
+
+mean(recall2$f);sd(recall2$f);(sd(recall2$f)/sqrt(39)) * 1.96
+mean(recall2$B);sd(recall2$B);(sd(recall2$B)/sqrt(39)) * 1.96
+mean(recall2$S);sd(recall2$S);(sd(recall2$S)/sqrt(39)) * 1.96
+mean(recall2$U);sd(recall2$U);(sd(recall2$U)/sqrt(39)) * 1.96
+
+t.test(recall2$S, recall2$U, paired = F, p.adjust.methods = "bonferroni")
+
 ```
 
-Prior to discussing our finds in more detail, we report a pooled analysis of mean JOLs and recall rates and their corresponding calibration plots . A 2 (Measure: JOL vs. Recall) � 4 (Pair Type: Forward vs. Backward vs. Symmetrical vs. Unrelated)  x 3 (Experiment: Standard Instructions vs Response Deadline vs Delayed Presentation) mixed ANOVA was used to test for differences in mean JOL ratings and recall proportions across associative direction conditions and experimental manipulations. Consistent with the individual analyses, JOLs exceeded Recall proportions (57.42 vs. 45.82), F(1, 90) = 67.46, MSE = 585.61, np2 = .21, showing that JOL ratings exceeded later recall across associative direction conditions and across all experimental manipulations. As expected, a significant effect of pair type was detected, F(3, 270) = 812.46, MSE = 109.04, np2 = .64. Overall JOL ratings/recall rates were greatest for forward pairs (66.83), followed by symmetrical pairs (64.98), backward pairs (49.02), and unrelated pairs (19.64). Post-hoc tests indicated that comparisons across all directional groups were statistically different ts >= 2.89, ds >= 0.13. Finally, a significant effect of experimental manipulation was also detected, F(2, 90) = 3.364, MSE = 539.79, np2 = .02, in which JOL ratings/recall rates were inflated in Experiment 3 when JOLs were elicited after a delay (52.65), relative to those reported in under standard instructions (50.28) and with a response deadline (47.37). A post-hoc analyses of these differences revealed that results from Experiment 3 were statistically greater than those obtained in 2 (t(92) = 2.59, SEM = 2.20, d = 0.60). Critically, a significant three-way interaction between experimental manipulation, associative direction, and task type was not detected, F(6, 270) = 0.29, MSE = 63.22, p = .90.
+##Discussion
 
-The calibration plots in Figure 5 show JOLs following similar patterns of overestimation that are in line with those previously reported across the individual experiments. JOL overestimations were detected for low JOL ratings of unrelated pairs (20%), with this increasing for backward (50%) and symmetrical pairs (80%). Finally, overestimation occurred for forward pairs, but only at the highest JOL ratings (90-100%), but at higher JOL ratings for symmetrical and forward pairs. These patterns were confirmed by significant effects of pair type, F(3,  276) = 255.41, MSE = 1338.34, np2 = .74, and JOL increment, F(10, 920) = 17.83, MSE = 1278.14, np2 = .16,  and a significant interaction was detected between the two, F(30, 2760) = 4.85, MSE = 839.43, np2 = .05. 	
+Findings from Experiment 4 were largely consistent with the previous experiments. Overestimation occurred most frequently across backward and unrelated word pairs, and again, these overestimations occurred for almost all JOL ratings that these two pair types received. Indeed, correct recall of these pairs never surpassed 60% at any JOL level, even when receiving JOL ratings of 60 or higher.
+Having participants provide their JOL ratings after completing the math task (vs. concurrently or immediately) was expected reduce the illusion of competence as delayed JOLs have been repeatedly shown throughout the literature to improve the relationship between predicted and actual recall performance (Rhodes, 2016). Our findings did not replicate the delayed JOL effect across any of the pair types. We discuss some methodological differences in the General Discussion below which may account for this discrepancy, but first turn to a set of cross-experimental analyses to confirm the consistency of our data patterns across experiments.
+
+
+#Cross Experimental Analyses
+
+```{r pooled, include=FALSE}
+pooled = read.csv("Pooled 11_26.csv")
+
+#pooled$Recall = pooled$Recall * 100
+
+long.dat2 = melt(pooled, id = c("Subject", 'Condition', "ex", "Direction"))
+
+summary(long.dat2)
+
+colnames(long.dat2)[5] = "Task"
+colnames(long.dat2)[6] = "Score"
+
+options(scipen = 999)
+
+summary(long.dat2)
+
+#write.csv(long.dat2, file = "longdata.csv", row.names = F)
+
+long.dat2$ex_num = as.character(long.dat2$ex)
+
+long.dat3 = subset(long.dat2,
+                   long.dat2$Subject != 151)
+long.dat4 = subset(long.dat3,
+                   long.dat3$Subject != 126)
+
+no_U = subset(long.dat2,
+              long.dat2$Direction != "U")
+
+yes_U = subset(long.dat2,
+               long.dat2$Direction == "U")
+
+model1 = ezANOVA(data = long.dat2,
+                 dv = Score,
+                 wid = Subject,
+                 within = .(Direction, Task),
+                 between = ex_num,
+                 type = 3,
+                 detailed = T)
+
+model1
+
+model1B = ezANOVA(data = no_U,
+                 dv = Score,
+                 wid = Subject,
+                 within = .(Direction, Task),
+                 between = ex_num,
+                 type = 3,
+                 detailed = T)
+
+model1B
+
+model1C = ezANOVA(data = yes_U,
+                  dv = Score,
+                  wid = Subject,
+                  within = (Task),
+                  between = ex_num,
+                  type = 3,
+                  detailed = T)
+model1C
+
+model1D = ezANOVA(data = long.dat3,
+                  dv = Score,
+                  wid = Subject,
+                  within = .(Task, Direction),
+                  between = ex_num,
+                  type = 3,
+                  detailed = T)
+model1D
+
+model1e = ezANOVA(data = long.dat4,
+                  dv = Score,
+                  wid = Subject,
+                  within = .(Task, Direction),
+                  between = ex_num,
+                  type = 3,
+                  detailed = T)
+model1e
+
+long.dat2 = long.dat2[ , -7]
+
+ex1 = subset(long.dat2,
+             long.dat2$ex == 1)
+ex2 = subset(long.dat2,
+             long.dat2$ex == 2)
+ex3 = subset(long.dat2,
+             long.dat2$ex == 3)
+ex4 = subset(long.dat2,
+             long.dat2$ex == 4)
+
+dat_1 = cast(ex1, Subject ~ Direction, mean)
+dat_2 = cast(ex2, Subject ~ Direction, mean)
+dat_3 = cast(ex3, Subject ~ Direction, mean)
+dat_4 = cast(ex4, Subject ~ Direction, mean)
+
+summary(dat_1)
+summary(dat_2)
+summary(dat_3)
+summary(dat_4)
+
+sd(dat_1$U)
+sd(dat_2$U)
+sd(dat_3$U)
+sd(dat_4$U)
+
+temp = t.test(dat_4$U, dat_3$U, paired = F, p.adjust.methods = "bonferroni")
+p1 = round(temp$p.value, 3)
+t1 = temp$statistic
+SEM1 = (temp$conf.int[2] - temp$conf.int[1]) / 3.92
+
+recall = subset(long.dat2,
+                long.dat2$Task == "Recall")
+jol = subset(long.dat2,
+             long.dat2$Task == "JOL")
+
+#jol = jol[ , -5]
+#recall = recall[ , -5]
+
+recall2 = cast(recall[ , -5], Subject ~ Direction, mean)
+jol2 = cast(jol[ , -5], Subject ~ Direction, mean)
+
+colnames(recall2)[3] = "f"
+colnames(jol2)[3] = "f"
+
+summary(jol2)
+summary(recall2)
+
+temp = t.test(jol2$U, recall2$U, paired = T, p.adjust.methods = "bonferroni")
+p1 = round(temp$p.value, 3)
+t1 = temp$statistic
+SEM1 = (temp$conf.int[2] - temp$conf.int[1]) / 3.92
+
+temp;p1;t1;SEM1
+
+summary(recall2)
+summary(jol2)
+
+67.05 - 67.95 
+64.71-33.06
+70.56-59.65
+31.55-13.82
+
+#TABLE A3 - POOLED
+
+mean(jol2$f);sd(jol2$f);(sd(jol2$f)/sqrt(39)) * 1.96
+mean(jol2$B);sd(jol2$B);(sd(jol2$B)/sqrt(39)) * 1.96
+mean(jol2$S);sd(jol2$S);(sd(jol2$S)/sqrt(39)) * 1.96
+mean(jol2$U);sd(jol2$U);(sd(jol2$U)/sqrt(39)) * 1.96
+
+mean(recall2$f);sd(recall2$f);(sd(recall2$f)/sqrt(39)) * 1.96
+mean(recall2$B);sd(recall2$B);(sd(recall2$B)/sqrt(39)) * 1.96
+mean(recall2$S);sd(recall2$S);(sd(recall2$S)/sqrt(39)) * 1.96
+mean(recall2$U);sd(recall2$U);(sd(recall2$U)/sqrt(39)) * 1.96
+
+```
+
+To examine the consistency between JOLs and recall across experiments, we first conducted a 2(Measure: JOL vs. Recall) × 4(Pair Type: Forward vs. Backward vs. Symmetrical vs. Unrelated) × 4(Experiment 1-4) mixed ANOVA. The effect of Experiment was marginally significant, F(3, 125) = 2.18, MSE = 758.28, p = .09, ηp2 = .02, which reflected greater JOL/recall for Experiment 2 compared to Experiment 3 (53.10 vs. 47.38), t(61) = 2.65, SEM = 2.21, d = 0.13, with all other comparisons unreliable, all ts < 1.86, ps > .07, but importantly, the three-ay interaction was non-significant, F(9, 375) = 1.48, MSE = 63.17, p = .15. Given this non-significant interaction, we pooled our data across experiments to examine the combined differences between JOL and recall accuracy as a function of pair type (see Figure 6).
+
+The pooled analysis indicated that JOLs were greater overall relative to recall, F(1, 128) = 86.08 MSE = 659.34, ηp2 = . 18, and JOLs/recall rates differed across pair types, F(3, 384) = 986.08, MSE = 114.68, ηp2 = .57. Importantly, an interaction was found, F(3, 384) = 185.43, MSE = 63.88, ηp2 = .12, which indicated a robust illusion of competence for backward pairs (64.50 vs. 32.84), t(128) = 17.68, SEM = 1.81, d = 1.96, with a smaller illusion for symmetrical (70.62 vs. 59.50), t(128) = 6.03, SEM = 1.86, d = 0.71, and unrelated pairs (30.70 vs. 13.28), t(128) = 4.99, SEM = 4.54, d = 1.11. Of note, even with the additional statistical power from the pooled analysis, no illusion of competence emerged for forward pairs (67.00 vs. 67.89), t < 1.
+
+We similarly conducted a cross-experimental analysis on the calibration plots and found no main effect or interactions with experiment (largest F = 1.07). A pooled analysis (see Figure 7) showed that JOL overestimations emerged at low JOL rates for unrelated pairs (20%), at higher rates for backward (40%) and symmetrical pairs (70%), but again, only emerged for forward pairs at the highest JOL ratings (90-100%). These patterns were confirmed by effects of pair type, F(3, 294) = 150.07, MSE = 1431.87, ηp2 = .61, JOL increment, F(10, 980) = 33.26, MSE = 1300.05, ηp2 = .25, and a significant interaction, F(30, 2940) = 7.51, MSE = 88.20, ηp2 = .02. Thus, despite efforts to manipulate the illusion of competence by varying the context in which JOLs were provided, these methods had little effect on JOL calibration, both when average JOL ratings were compared to mean recall accuracy and on calibration plots.
 
 #General Discussion
 
-The primary goal of this study was to further examine JOL overestimations on word pairs with different associative directions including symmetrical associates in which forward and backward strength are equivalent. Across three experiments, we found that backward, symmetrical, and unrelated pairs produced an illusion of competence in which JOL ratings exceeded later recall rates. This illusion was particularly robust for backward pairs in which the backward direction made recall of target items particularly difficult. In fact, our cross-experimental data showed that on average, JOLs for backward pairs exceeded recall rates by 34%. For symmetrical associates and unrelated pairs, this illusion was much more modest (9% and 15%, respectively), demonstrating that backward pairs are highly deceptive. For forward pairs, in which the target was highly predictive from the cue at test, participants were well-calibrated across experiments.
+The primary goal of our study was to further examine JOL overestimations on word pairs with different associative directions including symmetrical associates in which forward and backward strength are equivalent. Across experiments, we found that backward, symmetrical, and unrelated pairs produced an illusion of competence in which JOL ratings exceeded later recall rates. This illusion was particularly robust for backward pairs in which the backward direction made recall of target items particularly difficult. In fact, our cross-experimental data showed that on average, JOLs for backward pairs exceeded recall rates by 32%. For symmetrical associates and unrelated pairs, this illusion was much more modest (11% and 18%, respectively), demonstrating that backward pairs are highly deceptive. For forward pairs, in which the target was highly predictive from the cue at test, participants were well-calibrated across experiments.
 
-Calibration plots were constructed to provide a more fine-grained examination of the correspondence between JOLs and recall by examining recall rates at each 10% JOL increment relative to a calibration line. These calibration plots indicated that all pair types showed an illusion of competence at some JOL level, however, unrelated and backward pairs which had the lowest recall rates showed an overconfidence for most JOL ratings, whereas forward and symmetrical pairs only showed overconfidence in the highest JOL ratings. This pattern indicates that even when cues are highly predictive of a later target, as in forward pairs, an illusion of competence is likely to emerge for high JOLs. Inclusion of calibration plots is particularly important given "traditional" analyses on mean JOL/recall rates indicated that forward pairs showed no illusion of competence. Thus, the calibration plots indicate that the illusion can be moderated by JOL level.
+Calibration plots were constructed to provide a more fine-grained examination of the absolute accuracy between JOLs and recall by examining recall rates at each 10% JOL increment relative to a calibration line. These calibration plots indicated that all pair types showed an illusion of competence at some JOL level, however, unrelated and backward pairs which had the lowest recall rates showed an overconfidence for most JOL ratings, whereas forward and symmetrical pairs only showed overconfidence for the highest JOL ratings. This pattern indicates that even when cues are highly predictive of a later target, as in forward pairs, an illusion of competence can still be detected. The inclusion of calibration plots is particularly important given “traditional” analyses on mean JOL/recall rates indicated that forward pairs showed no illusion of competence. Thus, the calibration plots provide additional information regarding the correspondence between JOLs and recall accuracy that is unavailable if mean rates are examined in isolation.
 
-	Experiment 2 further examined JOL accuracy when encoding and JOL rating duration were limited to 5 s versus self-paced encoding. We reasoned that the self-paced encoding in Experiment 1 may have encouraged participants to slow their responses when presented with word pairs that they perceive as difficult to remember. While it was expected that restricting encoding time would likely inflate the illusion of competence given participants would not be able to adjust their encoding durations (thereby reducing correct recall), recall rates were similar between the experiments and the illusion of competence patterns persisted. Together, these experiments are consistent with Castel et al. (2007) who also showed similar JOL/recall patterns on associative pairs when comparing self-paced and timed study durations.
+Experiment 2 further examined JOL accuracy when encoding and JOL ratings were restricted to 5 s. We reasoned that self-paced encoding used in Experiment 1 may have encouraged participants to slow their encoding when presented with word pairs perceived as difficult to remember. While we expected that restricting encoding time would inflate the illusion of competence given participants would not be able to adjust their encoding durations (thereby reducing correct recall), recall rates were similar between the experiments and the illusion of competence patterns persisted. Together, these experiments are consistent with Castel et al. (2007) who also showed similar JOL/recall patterns when comparing self-paced and timed study durations.
 	
-In an attempt to improve JOL accuracy, Experiment 3 utilized a delayed JOL manipulation in which JOLs were provided in the absence of the studied word pair. Contrary to our expectations however, delayed JOLs were ineffective at reducing JOL overestimations and in fact, were actually greater relative to non-delayed JOLs used in Experiments 1 and 2 (see Figure 1 for comparisons). These inflated JOLs may be linked to the amount of time between when the stimuli pair is presented for study and when participants are asked to provide their JOL rating for the pair. In our delayed task, participants were presented with the cue-target pair and were then moved to a new screen where they were asked to provide a JOL rating for the pair that they had just studied. While the JOL ratings in our delayed manipulation were still elicited in the absence of the studied information, the short delay between study and rating may not provide sufficient time for a delayed JOL effect to arise. Thus, the delayed JOL effect may only be effective for increasing JOL accuracy if ratings are solicited after a substantial delay (e.g., Rhodes & Tauber, 2011) Indeed, previous work by Nelson and Dunlosky (1991) has shown this to be the case. By using mixed lists of immediate and delayed JOLs that were structured to have multiple immediate JOL trials spaced between the presentation of a delayed JOL study pair and its corresponding judgment prompt, they showed that delayed JOLs were more accurate relative to those made immediately after study. Thus, delayed manipulations are only effective at increasing JOL accuracy when ample time is provided between study and rating.
+In Experiment 3, an immediate JOL manipulation was used in which study pairs were removed when providing JOLs which occurred immediately following rather than concurrently with study. This manipulation was ineffective at reducing JOL overestimations and replicated prior research (e.g., Koriat & Bjork, 2005). 
 
-Although our delayed JOL manipulation did not enhance JOL accuracy, our experiments importantly build upon existing work on JOLs and associative pairs (e.g., Koriat & Bjork, 2005; Castel et al., 2007) through other means. For instance, our experiments directly compared forward, backward, symmetrical, and unrelated pairs, to more thoroughly catalogue JOL estimations. To this end, we were careful to control for potential item effects when constructing word pairs that could potentially affect either JOL ratings or recall accuracy. Specifically, associated pairs were all matched in associative strength and forward and backward pairs were created by simply flipping the pair order across counterbalances, making them perfect controls for each other. We were also careful to match all pairs on the basis of frequency, word length, and concreteness. Based on these efforts, we can have greater confidence that the effects reported are due to differences in associative direction and not item differences.
+Finally, Experiment 4 used a delayed JOL manipulation in which participants completed an OSPAN math problem between studying each cue-target pair and typing their JOL. Though we expected the delayed task to reduce the illusion of competence increase overall JOL accuracy and calibration, this was not the case as the same illusion of competence remained. One explanation for this is that our delayed manipulation deviated from the one traditionally reported in the literature. Nelson and Dunlosky (1991) used mixed lists of immediate and delayed JOLs in which the delay consisted of a series of immediate JOL trials interleaved between the study and rating phase of the delayed trial. Under these conditions, delayed (vs. immediate) JOLs were found to be more accurate. Furthermore, participants in our manipulation only completed one problem between study and rating. Thus, the length of our delay may not have been sufficient to increase accuracy (e.g., Rhodes & Tauber, 2011). 
 
-Despite the reliability of the data patterns reported across the experiments, we note two departures from the literature that are worthy of discussion. First, while our experiments showed that participants were generally well calibrated for forward pairs, Koriat and Bjork (2005) and Castel et al. (2007) showed that recall rates for forward pairs exceeded initial JOLs. Second, Castel et al., showed that JOLs were well calibrated overall for unrelated pairs whereas we consistently found an illusion of competence pattern. We ascribe these differences between studies to either (1) differences in lexical/semantic characteristics across pair types that were not controlled for in previous studies, or, (2) that there were considerable differences in the number of pairs that participants were presented with at study, thus affecting recall rates, which we believe is a more likely possibility. For instance, across Koriat and Bjork's experiments, participants studied between 24-72 pairs and in Castel et al. participants studied 48 pairs. However, in our experiments, participants studied a total of 180 items split between two blocks, a larger number of pairs which could have negatively impacted correct recall by increasing interference. Indeed, correct recall rates tended to be 15-25% lower in our experiments relative to these previous studies, though the JOL rates were relatively consistent. This latter possibility is interesting because it suggests that methods that affect recall rates may be important for whether an illusion of competence is found or not. Methods to enhance memory for the target item such as the use of deep levels-of-processing tasks at study may be more effective at improving the calibration between JOLs and recall by improving recall to match typical JOL overestimations. An encoding task could possibly be paired with a set of instructions designed to encourage participants to temper their JOLs. Indeed, Koriat and Bjork (2006) have shown some success at improving JOL accuracy with such instructions.
+For delayed JOLs to be successful at improving accuracy, the task completed between study and judgment must effectively remove the studied pair from working memory such that participants rely on long-term memory when making their JOLs (Dunlosky & Nelson, 1992). Though we reasoned that our delayed task would be sufficient to remove the studied pairs from working memory, the illusion of competence persisted. 
 
-Our preceding discussion on methods to improve JOL accuracy therefore leads us to the question: What drives JOL overestimations in the first place? According to the cue-utilization framework set forth by Koriat (1997), metacognitive judgments are based on three domains: The readily observable characteristics of the items to be studied (i.e., intrinsic cues such as the characteristics of the studied pairs, such as item difficulty, associative strength, etc.), manipulations undertaken at the time of encoding (i.e., extrinsic cues such as stimulus duration, study strategy, etc.), and mnemonic cues that inform participants of how well they have learned a given item and to what extent they will be required to remember the item later. Koriat (1997) showed that both intrinsic and extrinsic factors influenced JOL strengths, though only intrinsic factors were shown to influence both JOLs and recall rates equally. As briefly reviewed above, the cue-utilization framework then suggests that JOL overestimation should arise when participants are basing their JOL ratings on extrinsic cues, as these are cues are more likely to disproportionately affect recall rates. However, the present study shows that the direction of association (which by nature is an intrinsic cue) is powerful enough to induce an overconfidence bias. Specifically, the direction of the association may disrupt the mnemonic cues that inform participants of how well they are learning the studied information (i.e., participants may perceive pairs as being more related and thus less difficult to recall) and the conditions in which they will need to retrieve the information. As participants appear to focus primarily on the semantic relatedness of paired items when making their JOLs, pairs where the retrieval conditions are less certain (such as symmetrical pairs) or unusual (e.g., backward pairs) may result in instances where JOL ratings consistently surpass recall rates.
+Although our delayed JOL manipulation did not enhance JOL accuracy, our experiments importantly build upon existing work on JOLs and associative pairs (e.g., Koriat & Bjork, 2005; Castel et al., 2007) in novel ways. For instance, our experiments directly compared forward, backward, symmetrical, and unrelated pairs, to more thoroughly catalogue JOL estimations. To this end, we controlled for potential item effects when constructing word pairs that could potentially affect either JOL ratings and/or recall accuracy. Specifically, associated pairs were all matched in associative strength and forward and backward pairs were created by simply flipping the pair order across counterbalances, making them perfect controls for each other. We were also careful to match all pairs based on frequency, length, and concreteness. From these efforts, we have greater confidence that the effects reported are due to differences in associative direction and not item differences.
 
-Alternatively, the robustness of the illusion of competence may be explained by comparing JOLs to the related Judgment of Associative Memory (JAM; see Maki, 2007a, for a review). In a JAM task, individuals are presented with paired associates and are asked to rate the associative strength of the pair (i.e., how many individuals out of 100 would respond to the cue word with the presented target), mimicking the free association process used to create associative overlap norms. JAM ratings are also prone to overestimation, and previous research (Maki, 2007a, 2007b; Valentine & Buchanan 2013) has shown that individuals typically perform poorly on such tasks. Maki (2007a) proposed that this increase in JAM ratings for forward pairs resulted from the presented target activating items related to the cue that tend to be activated less often when only the cue item is shown (Koriat & Bjork, 2006). This may extend to judgments of learning: If individuals have inflated notions of how related paired items are, they may display a tendency to inflate JOLs. However, this explanation seems unlikely, as this study showed that the illusion of competence replicates even after we controlled for the effects of association strength by equating all study lists on FAS and BAS and by having the forward and backward pairs be comprised of the same individual items. Thus, we conclude that the direction of the association is the primary factor driving the illusion of competence.
+Despite the reliability of the data patterns reported across the experiments, we note two departures from the literature that are worthy of discussion. First, while our experiments showed that participants were generally well calibrated for forward pairs such that the difference between JOLs and recall was non-significant, Koriat and Bjork (2005) and Castel et al. (2007) showed that recall rates for forward pairs consistently exceeded JOLs. Second, Castel et al., showed that JOLs were well calibrated overall for unrelated pairs whereas we consistently found an illusion of competence pattern for this pair type. We ascribe these differences between studies to either (1) differences in lexical/semantic characteristics across pair types that were left uncontrolled, or (2) that there were considerable differences in the number of pairs that participants were presented with at study, affecting recall rates, which we believe is a more likely possibility. For instance, across Koriat and Bjork’s experiments, participants studied between 24-72 pairs and in Castel et al. participants studied 48 pairs. However, in our experiments, participants studied a total of 180 items split between two blocks, a larger number of pairs which could have negatively impacted correct recall through increased interference. Indeed, correct recall rates tended to be 15-25% lower in our experiments relative to these previous studies, though the JOL rates were relatively consistent. This latter possibility is interesting because it suggests that methods that affect recall rates may be important for whether an illusion of competence is found or not, as JOLs may not be affected in the same way. Methods to enhance memory for the target item such as the use of deep levels-of-processing tasks at study may be more effective at improving the calibration between JOLs and recall by improving recall to match typical JOL overestimations. Such encoding tasks could further be paired with a set of instructions designed to encourage participants to temper their JOLs. Indeed, Koriat and Bjork (2006) have shown some success at improving JOL accuracy with such instructions. 
+
+Our preceding discussion on methods to improve JOL accuracy therefore leads us to the question: What drives JOL overestimations in the first place? According to the cue-utilization framework (Koriat, 1997), metacognitive judgments are based on three domains: Readily observable characteristics of the study items (i.e., intrinsic characteristics of the pairs, such as item difficulty, associative strength, etc.), manipulations at encoding (i.e., extrinsic cues such as stimulus duration, study strategy, etc.), and mnemonic cues that inform participants of how well they have learned a given item and to what extent they will be required to remember the item later. Koriat showed that intrinsic and extrinsic factors influenced JOL strengths, though only intrinsic factors were shown to influence JOLs and recall rates equally. The cue-utilization framework then suggests that JOL overestimation should arise when participants are basing JOL ratings on extrinsic cues, as these are cues are more likely to disproportionately affect recall rates. However, the present study shows that the direction of association (which is an intrinsic cue) is powerful enough to induce an overconfidence bias. Specifically, the direction of the association may disrupt the mnemonic cues that inform participants of how well they are learning the studied information (i.e., participants may perceive pairs as being more related and thus less difficult to recall) and the conditions in which they will need to retrieve the information. As participants emphasize the semantic relatedness of pairs when providing JOLs, pairs where the retrieval conditions are less certain (such as symmetrical pairs) or unusual (e.g., backward pairs) may result in instances where JOL ratings consistently surpass recall rates.
+
+Alternatively, the robustness of the illusion of competence may be explained by comparing JOLs to JAM ratings (Maki, 2007). In a JAM task, individuals are presented with paired associates and are asked to rate the associative strength of the pair (i.e., how many individuals out of 100 would respond to the cue word with the presented target?), mimicking the free-association process used to create overlap norms. JAM ratings are also prone to overestimation, and previous research (Maki, 2007; Valentine & Buchanan 2013) has shown that individuals typically perform poorly on such tasks. Maki (2007) proposed that this increase in JAM ratings for forward associates resulted from the presented target activating items related to the cue that tend to be activated less often when only the cue item is shown (Koriat & Bjork, 2006). This may extend to JOLs: If individuals have inflated notions of associative strength, they may be more likely to inflate JOLs. However, this explanation seems unlikely, as this study showed that the illusion of competence replicates even after we controlled for the effects of association strength by equating all study lists on FAS and BAS and by having the forward and backward pairs be comprised of the same individual items. Thus, we conclude that the direction of the association is the primary factor driving the illusion of competence.
 
 #Conclusion
 
-The present study provides a critical examination of how the associative direction of cue target pairs affects the calibration between JOL ratings and recall. Our data provide further evidence for the illusion of competence first described by Koriat and Bjork (2005) and show that it extends beyond backward associates and identical item pairs (Castel et al., 2007). Calibration plots allowed us to determine the point at which JOLs became overestimated for each of the pair types. These plots revealed an important finding in that JOL overestimations occurred across pair types, but forward and symmetrical pair types were only overestimated at the highest JOL ratings. Collectively, our experiments provide greater understanding of how associative direction influences metacognitive judgment making and can be informative for developing methods to reduce such metacognitive illusions.
+The present study provides a critical examination of how the associative direction of cue-target pairs affects the calibration between JOL ratings and recall. Our data provide further evidence for the illusion of competence described by Koriat and Bjork (2005) and show that it extends beyond backward associates and identical item pairs (Castel et al., 2007). Calibration plots allowed us to determine the point at which JOLs became overestimated for each of the pair types. These plots revealed an important qualitative finding in that JOL overestimations occurred across pair types, but forward and symmetrical pair types were only overestimated at the highest JOL ratings. Collectively, our experiments provide greater understanding of how associative direction influences metacognitive judgment making and can be informative for developing methods to reduce such metacognitive illusions.
 \newpage
 
 # References
