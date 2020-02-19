@@ -12,9 +12,8 @@ dat['diff2'] = dat['diff'].div(2) #length from line to point
 ##subset into the separate plots
 ex1 = dat[dat['Experiment'] == 1] #standard instructions
 ex2 = dat[dat['Experiment'] == 2] #response deadline
-ex3 = dat[dat['Experiment'] == 3] #Delayed JOL
-ex4 = dat[dat['Experiment'] == 4] #Pooled
-
+ex3 = dat[dat['Experiment'] == 3] 
+ex4 = dat[dat['Experiment'] == 4] 
 ##set up the initial plot
 fig = plt.figure()
 fig.set_size_inches(15,15)
@@ -43,19 +42,19 @@ r1_conf = r1['diff2']
 ind = np.arange(len(j1_average))  # the x locations for the groups
 width = 0.35 #bar width 
 
-rects1 = ax1.bar(ind - width/2, j1_average, width, yerr = j1_conf, capsize = 3, color = 'dodgerblue', edgecolor = 'k',
+rects1 = ax1.bar(ind - width/2, j1_average, width, yerr = j1_conf, capsize = 3, color = 'white', edgecolor = 'k',
                 label ='JOL')
 
-rects2 = ax1.bar(ind + width/2, r1_average, width, yerr = r1_conf, capsize = 3, color = 'midnightblue', edgecolor = 'k',
+rects2 = ax1.bar(ind + width/2, r1_average, width, yerr = r1_conf, capsize = 3, color = 'grey', edgecolor = 'k',
                 label = 'Recall')
 
 #Make the plot spiffy
 ax1.set_title('Experiment 1: Concurrent JOLs', fontsize = 20, fontweight = 'bold')
 ax1.set_ylabel('Mean % JOL/Recall', fontsize = 18, fontweight = 'bold')
 ax1.set_xlabel('Direction', fontsize = 18, fontweight = 'bold')
-ax1.xaxis.labelpad = 0
+#ax1.xaxis.labelpad = 0
 ax1.set_xticks(ind)
-ax1.set_xticklabels(('B', 'F', 'S', 'U'), fontsize = 16)
+ax1.set_xticklabels(('Backward', 'Forward', 'Symmetrical', 'Unrelated'), fontsize = 16)
 ax1.legend(fontsize = 16)
 ax1.set_ylim([0,100])
 
@@ -75,10 +74,10 @@ r2_conf = r2['diff2']
 ind = np.arange(len(j2_average))  # the x locations for the groups
 width = 0.35 #bar width 
 
-rects3 = ax2.bar(ind - width/2, j2_average, width, yerr = j2_conf, capsize = 3, color = 'dodgerblue', edgecolor = 'k',
+rects3 = ax2.bar(ind - width/2, j2_average, width, yerr = j2_conf, capsize = 3, color = 'white', edgecolor = 'k',
                 label ='JOL')
 
-rects4 = ax2.bar(ind + width/2, r2_average, width, yerr = r2_conf, capsize = 3, color = 'midnightblue', edgecolor = 'k',
+rects4 = ax2.bar(ind + width/2, r2_average, width, yerr = r2_conf, capsize = 3, color = 'grey', edgecolor = 'k',
                 label = 'Recall')
 
 #Make the plot spiffy
@@ -86,7 +85,7 @@ ax2.set_title('Experiment 2: Response Deadline', fontsize = 20, fontweight = 'bo
 ax2.set_ylabel('Mean % JOL/Recall', fontsize = 18, fontweight = 'bold')
 ax2.set_xlabel('Direction', fontsize = 18, fontweight = 'bold')
 ax2.set_xticks(ind)
-ax2.set_xticklabels(('B', 'F', 'S', 'U'), fontsize = 16)
+ax2.set_xticklabels(('Backward', 'Forward', 'Symmetrical', 'Unrelated'), fontsize = 16)
 ax2.legend(fontsize = 16)
 ax2.set_ylim([0,100])
 
@@ -106,10 +105,10 @@ r3_conf = r3['diff2']
 ind = np.arange(len(j3_average))  # the x locations for the groups
 width = 0.35 #bar width 
 
-rects5 = ax3.bar(ind - width/2, j3_average, width, yerr = j3_conf, capsize = 3, color = 'dodgerblue', edgecolor = 'k',
+rects5 = ax3.bar(ind - width/2, j3_average, width, yerr = j3_conf, capsize = 3, color = 'white', edgecolor = 'k',
                 label ='JOL')
 
-rects6 = ax3.bar(ind + width/2, r3_average, width, yerr = r3_conf, capsize = 3, color = 'midnightblue', edgecolor = 'k',
+rects6 = ax3.bar(ind + width/2, r3_average, width, yerr = r3_conf, capsize = 3, color = 'grey', edgecolor = 'k',
                 label = 'Recall')
 
 #Make the plot spiffy
@@ -117,7 +116,7 @@ ax3.set_title('Experiment 3: Immediate JOLs', fontsize = 20, fontweight = 'bold'
 ax3.set_ylabel('Mean % JOL/Recall', fontsize = 18, fontweight = 'bold')
 ax3.set_xlabel('Direction', fontsize = 18, fontweight = 'bold')
 ax3.set_xticks(ind)
-ax3.set_xticklabels(('B', 'F', 'S', 'U'), fontsize = 16)
+ax3.set_xticklabels(('Backward', 'Forward', 'Symmetrical', 'Unrelated'), fontsize = 16)
 ax3.legend(fontsize = 16)
 ax3.set_ylim([0,100])
 
@@ -137,10 +136,10 @@ r4_conf = r4['diff2']
 ind = np.arange(len(j4_average))  # the x locations for the groups
 width = 0.35 #bar width 
 
-rects7 = ax4.bar(ind - width/2, j4_average, width, yerr = j4_conf, capsize = 3, color = 'dodgerblue', edgecolor = 'k',
+rects7 = ax4.bar(ind - width/2, j4_average, width, yerr = j4_conf, capsize = 3, color = 'white', edgecolor = 'k',
                 label ='JOL')
 
-rects8 = ax4.bar(ind + width/2, r4_average, width, yerr = r4_conf, capsize = 3, color = 'midnightblue', edgecolor = 'k',
+rects8 = ax4.bar(ind + width/2, r4_average, width, yerr = r4_conf, capsize = 3, color = 'grey', edgecolor = 'k',
                 label = 'Recall')
 
 #Make the plot spiffy
@@ -148,9 +147,9 @@ ax4.set_title('Experiment 4: Delayed JOLs', fontsize = 20, fontweight = 'bold')
 ax4.set_ylabel('Mean % JOL/Recall', fontsize = 18, fontweight = 'bold')
 ax4.set_xlabel('Direction', fontsize = 18, fontweight = 'bold')
 ax4.set_xticks(ind)
-ax4.set_xticklabels(('B', 'F', 'S', 'U'), fontsize = 16)
+ax4.set_xticklabels(('Backward', 'Forward', 'Symmetrical', 'Unrelated'), fontsize = 16)
 ax4.legend(fontsize = 16)
 ax4.set_ylim([0,100])
 
 ##save figure
-fig.savefig('Combined_bar_chart2.png', dip = 10000)
+fig.savefig('Combined_bar_chart_final.png', dip = 10000)
